@@ -407,7 +407,7 @@ global.sendButtons = async (
 };
 AdminFunction.cmd(
   {
-    cmdname: "menu",
+    cmdname: "sahan",
     desc: "Help list",
     react: "📃",
     type: "user",
