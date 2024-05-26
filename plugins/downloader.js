@@ -1781,32 +1781,58 @@ UserFunction(
     }
   }
 );
-/*--------------------------------------*/
-UserFunction({
-   pattern: "song",
-   alias: ["music"],
-   desc: "Downloads audio from youtube.",
-   category: "downloader",
-   filename: __filename,
-   use: "<give text>"
- }, async (_0x2c2023, _0x4ec99f) => {
-   try {
-     if (!_0x4ec99f) {
-       return await _0x2c2023.reply("*_Give Me Search Query_*");
-     }
-     let _0x3b2ca6 = await yts(_0x4ec99f);
-     let _0x4123ae = _0x3b2ca6.all[0];
-     let _0x5883a9 = "\t *WASI MD V2 -ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " + _0x4123ae.title + "\nUrl : " + _0x4123ae.url + "\n*Description :* " + _0x4123ae.timestamp + "\n*Views :* " + _0x4123ae.views + "\n*Uploaded :* " + _0x4123ae.ago + "\n*Author :* " + _0x4123ae.author.name + "\n\n\n_Reply 1 for Video_ Or _1 document_\n_Reply 2 for Audio_ Or _2 document_";
-     let _0x3885cc = await smdBuffer(_0x4123ae.thumbnail);
-     var _0x44a363 = {
-       ...(await _0x2c2023.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ꜱᴏɴɢ", _0x3885cc))
-     };
-     await _0x2c2023.bot.sendMessage(_0x2c2023.jid, {
-       image: _0x3885cc,
-       caption: _0x5883a9,
-       contextInfo: _0x44a363
-     });
-/*-----------------*/
+UserFunction(
+  {
+    pattern: "song",
+    alias: ["audio"],
+    desc: "Downloads audio from youtube.",
+    category: "downloader",
+    filename: __filename,
+    use: "<give text>",
+  },
+  async (mesage, match) => {
+    try {
+      if (!match) {
+        return await mesage.reply("*_Give Me Search Query_*");
+      }
+      let q = await yts(match);
+      let resukt = q.all[0];
+      let RTYPE =
+        "\t *𝐌ᴀꜱᴛᴇʀ-𝐌ᴅ • 𝐒ᴏɴɢ 𝐃ᴏᴡɴʟᴏᴀᴅᴇʀ_🎶👨‍💻*   \n\n*🔰𝐓ɪᴛʟᴇ :* " +
+        resukt.title +
+        "\n🔰𝐔ʀʟ : " +
+        resukt.url +
+        "\n*🔰𝐃ᴇꜱᴄʀɪᴘᴛɪᴏɴ :* " +
+        resukt.timestamp +
+        "\n*🔰𝐕ɪᴇᴡꜱ :* " +
+        resukt.views +
+        "\n*🔰𝐔ᴘʟᴏᴀᴅᴇᴅ :* " +
+        resukt.ago +
+        "\n*🔰𝐀ᴜᴛʜᴏʀ :* " +
+        resukt.author.name +
+        "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
+      let IMGTYPE = await amdBuffer(resukt.thumbnail);
+      var CTYPE = {
+        ...(await mesage.bot.contextInfo(
+          Config.botname,
+          "ᴍᴀꜱᴛᴇʀ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ",
+          IMGTYPE
+        )),
+      };
+      await mesage.bot.sendMessage(mesage.jid, {
+        image: IMGTYPE,
+        caption: RTYPE,
+        contextInfo: CTYPE,
+      });
+    } catch (errr) {
+      return mesage.error(
+        errr + "\n\ncommand: song",
+        errr,
+        "*_song not found!!_*"
+      );
+    }
+  }
+);
 UserFunction(
   {
     pattern: "yts",
