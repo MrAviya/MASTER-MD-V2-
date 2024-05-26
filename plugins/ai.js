@@ -169,7 +169,7 @@ UserFunction(
 );
 UserFunction(
   {
-    pattern: "leapai",
+    pattern: "aiimage",
     desc: "Generate an AI photo.",
     category: "ai",
     filename: __filename,
@@ -205,13 +205,13 @@ UserFunction(
       await m.bot.sendFromUrl(
         m.from,
         photoUrl,
-        "Here is your generated photo:",
+        "•ᴍᴀꜱᴛᴇʀ ᴍᴅ•",
         m,
         {},
         "image"
       );
     } catch (e) {
-      await m.error(`${e}\n\ncommand: leapai`, e);
+      await m.error(`${e}\n\ncommand: aiimage`, e);
     }
   }
 );
