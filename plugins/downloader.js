@@ -54,7 +54,7 @@ UserFunction(
       }
 
       const { title, thumbnail, medias } = result;
-      const caption = `*Title:* ${title}\n\n*Source:* ${medias[0].source}`;
+      const caption = `*➠ᴛɪᴛʟᴇ:* ${title}\n\n*➠ꜱᴏᴜʀᴄᴇ:* ${medias[0].source}`;
 
       await messsage.bot.sendFromUrl(
         messsage.from,
@@ -67,7 +67,7 @@ UserFunction(
 
       for (const media of medias) {
         const { url, formattedSize, quality, extension } = media;
-        const mediaCaption = `*Quality:* ${quality}\n*Size:* ${formattedSize}\n*Extension:* ${extension}`;
+        const mediaCaption = `*Qᴜᴀʟɪᴛʏ:* ${quality}\n*ꜱɪᴢᴇ:* ${formattedSize}\n*ᴇxᴛᴇɴꜱɪᴏɴ:* ${extension}`;
         await messsage.bot.sendFromUrl(
           messsage.from,
           url,
@@ -170,7 +170,7 @@ UserFunction(
             _0x13ee38,
             {
               packname: Config.packname,
-              author: "Astro",
+              author: "Sahan",
             },
             "sticker"
           );
@@ -209,7 +209,7 @@ UserFunction(
         return await message.send(
           "*`Sir you didn't give me anything to search for!`*\n\n" +
             prefix +
-            "wiki2 elon musk"
+            "wiki2 `elon musk`"
         );
       }
       let { wikimedia: requested } = require("../lib");
@@ -275,7 +275,7 @@ UserFunction(
       }
 
       const { downloadUrl, fileName, fileSize, mimetype } = data.result;
-      const caption = `*File:* ${fileName}\n*Size:* ${fileSize}\n*Type:* ${mimetype}`;
+      const caption = `*ꜰɪʟᴇ:* ${fileName}\n*ꜱɪᴢᴇ:* ${fileSize}\n*ᴛʏᴘᴇ:* ${mimetype}`;
 
       await message.bot.sendFromUrl(
         message.from,
@@ -324,11 +324,11 @@ UserFunction(
         url: songUrl,
       } = data.result;
 
-      let output = `*Song:* ${song}\n`;
-      output += `*Artist:* ${artist.join(", ")}\n`;
-      output += `*Album:* ${album_name}\n`;
-      output += `*Release Date:* ${release_date}\n\n`;
-      output += `*Cover Image:* ${cover_url}\n\n`;
+      let output = `*Sᴏɴɢ:* ${song}\n`;
+      output += `*Aʀᴛɪꜱᴛ:* ${artist.join(", ")}\n`;
+      output += `*Aʟʙᴜᴍ:* ${album_name}\n`;
+      output += `*Rᴇʟᴇᴀꜱᴇ Dᴀᴛᴇ:* ${release_date}\n\n`;
+      output += `*Cᴏᴠᴇʀ Iᴍᴀɢᴇ:* ${cover_url}\n\n`;
 
       const buffer = await axios.get(songUrl, { responseType: "arraybuffer" });
       const fileName = `${song.replace(/\s/g, "_")}.mp3`;
@@ -456,7 +456,7 @@ UserFunction(
 
       let caption = video.data.caption
         ? video.data.caption
-        : `*Twitter Video Download*\n\n*Username:* ${video.data.username}`;
+        : `*Twitter Video Download*\n\n*Uꜱᴇʀɴᴀᴍᴇ:* ${video.data.username}`;
 
       return await message.bot.sendMessage(
         message.chat,
@@ -546,11 +546,11 @@ UserFunction(
       }
       const info = result.dllink;
       let _0x24f726 = await fancytext(
-        `『 *ᗩᑭᏦ  ᗞᝪᗯᑎしᝪᗩᗞᗴᖇ* 』
-*APP Name :*  ${result.name}
-*App Id :* ${result.package}
-*Last Up :* ${result.lastup}
-*App Size :* " ${result.size}`
+        `『 *𝙰𝙿𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 』
+*𝐀𝐩𝐩 𝐍𝐚𝐦𝐞 :*  ${result.name}
+*𝐀𝐩𝐩 𝐈𝐃 :* ${result.package}
+*𝐋𝐚𝐬𝐭 𝐔𝐩 :* ${result.lastup}
+*𝐀𝐩𝐩 𝐒𝐢𝐳𝐞 :* " ${result.size}`
       );
       const ResultFile = (result?.name || "Downloader") + ".apk";
       const STORE = "temp/" + ResultFile;
@@ -619,7 +619,7 @@ cmd(
       if (Request.length) {
         let files = await download(Request[0].id);
         let Info =
-          "*ᴀsᴛᴀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " +
+          "*ᴍᴀꜱᴛᴇʀ ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " +
           match +
           "_ \n";
         for (let results = 0; results < Request.length; results++) {
@@ -671,7 +671,7 @@ UserFunction(
         return await message.reply(
           "*`Give Me Git Repo`*\n\n" +
             prefix +
-            "gitclone https://github.com/Astropeda/Asta-Md"
+            "gitclone https://github.com/MrMasterOfc/MASTER-MD-V2"
         );
       }
       const URl = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i;
@@ -812,7 +812,7 @@ UserFunction(
       let isVoice = message.reply_text ? message.reply_text : query;
       if (!isVoice) {
         return message.reply(
-          "*`Example : " + prefix + "tts Hi,I am Asta-Md whatsapp bot.`*"
+          "*`Example : " + prefix + "tts Hi,I am Master Md whatsapp bot.`*"
         );
       }
       try {
@@ -1308,7 +1308,7 @@ UserFunction(
         return m.reply("*_Could not find the file!_*");
       }
 
-      const caption = `『 *Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ* 』\n\n *Name* : ${result.name}\n *Size* : ${result.size}\n *Mime* : ${result.mime}\n\n\n${Config.caption}`;
+      const caption = `『 *Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ* 』\n\n *Nᴀᴍᴇ* : ${result.name}\n *Sɪᴢᴇ* : ${result.size}\n *Mɪᴍᴇ* : ${result.mime}\n\n\n${Config.caption}`;
       const fancyCaption = await fancytext(caption, 25);
       const contextInfo = {
         ...(await m.bot.contextInfo(Config.botname, "MEDIAFIRE")),
@@ -1341,7 +1341,7 @@ UserFunction(
     let match = query ? query : meesage.reply_text;
     var isDoc = query.toLowerCase().includes("doc") ? "document" : "video";
     if (!match) {
-      return meesage.reply("*Use : " + prefix + "video Moon Men*");
+      return meesage.reply("*Use : " + prefix + "video mastermind*");
     }
     let DResult = ytIdRegex.exec(query) || [];
     let elseMatch = DResult[0] || false;
@@ -1369,7 +1369,7 @@ UserFunction(
         EndResult.on("finish", Success);
       });
       var EndRsultMsg = {
-        ...(await meesage.bot.contextInfo(Config.botname, "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
+        ...(await meesage.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
       };
       let MetaData = {
         [isDoc]: fs.readFileSync(SaveDir),
@@ -1400,14 +1400,14 @@ UserFunction(
         var EndRsultMsg = {
           ...(await meesage.bot.contextInfo(
             Config.botname,
-            "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"
+            "ᴍᴀꜱᴛᴇʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"
           )),
         };
         let DocFileData =
           InfoVidMeta.title ||
           DocMsgMeta ||
           DResult[1] ||
-          "Asta MD -- YT Video";
+          "Master MD -- YT Video";
         if (DocMsgMeta) {
           await meesage.bot.sendMessage(meesage.chat, {
             [isDoc]: {
@@ -1445,7 +1445,7 @@ UserFunction(
   async (message, results) => {
     let match = results ? results : message.reply_text;
     if (!match) {
-      return message.reply("Example : " + prefix + "video2 hello world");
+      return message.reply("Example : " + prefix + "video2 master mind");
     }
     var TypeData = match.toLowerCase().includes("doc") ? "document" : "video";
     let ElseCheckedReee = ytIdRegex.exec(results) || [];
@@ -1471,7 +1471,7 @@ UserFunction(
       let InitDat = await yt.download(ElseCheckedReee[1], _0x355f66);
       let Output = FILE_TYPE.title || InitDat || ElseCheckedReee[1];
       var DocsVdFileType = {
-        ...(await message.bot.contextInfo(Config.botname, "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
+        ...(await message.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
       };
       if (InitDat) {
         await message.bot.sendMessage(message.chat, {
@@ -1512,7 +1512,7 @@ UserFunction(
       let match = query ? query : message.reply_text;
       var TYPE = match.toLowerCase().includes("doc") ? "document" : "audio";
       if (!match) {
-        return message.reply("*" + prefix + "play back in black*");
+        return message.reply("*Example*" + prefix + "play back in black*");
       }
       let result = ytIdRegex.exec(match) || [];
       let Rmatch = result[0] || false;
@@ -1529,13 +1529,13 @@ UserFunction(
           "*_Can't dowanload, file duration too big_*"
         );
       }
-      await message.send("_Downloading " + data.title + "?_");
+      await message.send("_Dᴏᴡɴʟᴏᴀᴅɪɴɢ " + data.title + "?_");
       let resulted = await yt.download(result[1], {
         type: "audio",
         quality: "best",
       });
       var MTYPE = {
-        ...(await message.bot.contextInfo(Config.botname, "ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
+        ...(await message.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
       };
       if (resulted) {
         await message.bot.sendMessage(message.jid, {
@@ -1547,7 +1547,7 @@ UserFunction(
           contextInfo: MTYPE,
         });
       } else {
-        message.send("*_Video not Found_*");
+        message.send("*_video not Found_*");
       }
       try {
         fs.unlinkSync(resulted);
@@ -1586,12 +1586,12 @@ UserFunction(
       var MTYPE = {
         ...(await message.bot.contextInfo(
           Config.botname,
-          "ᴛɪᴋᴛᴏᴋ ꜱᴏᴜɴᴅ " + data
+          "ᴍᴀꜱᴛᴇʀ ᴛɪᴋᴛᴏᴋ ꜱᴏᴜɴᴅ " + data
         )),
       };
       let FTYPE = {
         audio: AFILE,
-        fileName: "Asta-Md tiktok Sound" + data + ".m4a",
+        fileName: "Master-Md tiktok Sound" + data + ".m4a",
         mimetype: "audio/mpeg",
         ptt: true,
         contextInfo: MTYPE,
@@ -1665,7 +1665,7 @@ UserFunction(
       var MTYPE = {
         ...(await message.bot.contextInfo(
           Config.botname,
-          "ʀɪɴɢᴛᴏɴᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"
+          "ᴍᴀꜱᴛᴇʀ ʀɪɴɢᴛᴏɴᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"
         )),
       };
       let ATYPE = {
@@ -1707,7 +1707,7 @@ UserFunction(
         return await msg.send("*_No Result found!_*");
       }
       var MTYPE = {
-        ...(await msg.bot.contextInfo(Config.botname, "ᴘɪɴᴛᴇʀᴇꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
+        ...(await msg.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ᴘɪɴᴛᴇʀᴇꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
       };
       let data = request.length < 5 ? request.length : 5;
       for (let result = 0; result < data; result++) {
@@ -1750,11 +1750,11 @@ UserFunction(
         return message.reply("could not found anything");
       }
       let _0x504ec3 =
-        "『 *Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ* 』\n\n *Name* : " +
+        "『 *Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ* 』\n\n *Nᴀᴍᴇ* : " +
         result[0].nama +
-        "\n *Size* :" +
+        "\n *Sɪᴢᴇ* :" +
         result[0].size +
-        "\n *Mime* : " +
+        "\n *Mɪᴍᴇ* : " +
         result[0].mime +
         "\n \n\n" +
         Config.caption;
@@ -1798,24 +1798,24 @@ UserFunction(
       let q = await yts(match);
       let resukt = q.all[0];
       let RTYPE =
-        "\t *ᴀsᴛᴀ-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " +
+        "\t *𝐌ᴀꜱᴛᴇʀ-𝐌ᴅ • 𝐒ᴏɴɢ 𝐃ᴏᴡɴʟᴏᴀᴅᴇʀ_🎶👨‍💻*   \n\n*🔰𝐓ɪᴛʟᴇ :* " +
         resukt.title +
-        "\nUrl : " +
+        "\n🔰𝐔ʀʟ : " +
         resukt.url +
-        "\n*Description :* " +
+        "\n*🔰𝐃ᴇꜱᴄʀɪᴘᴛɪᴏɴ :* " +
         resukt.timestamp +
-        "\n*Views :* " +
+        "\n*🔰𝐕ɪᴇᴡꜱ :* " +
         resukt.views +
-        "\n*Uploaded :* " +
+        "\n*🔰𝐔ᴘʟᴏᴀᴅᴇᴅ :* " +
         resukt.ago +
-        "\n*Author :* " +
+        "\n*🔰𝐀ᴜᴛʜᴏʀ :* " +
         resukt.author.name +
         "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
       let IMGTYPE = await amdBuffer(resukt.thumbnail);
       var CTYPE = {
         ...(await mesage.bot.contextInfo(
           Config.botname,
-          "ʏᴏᴜᴛᴜʙᴇ ꜱᴏɴɢ",
+          "ᴍᴀꜱᴛᴇʀ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ",
           IMGTYPE
         )),
       };
@@ -1826,9 +1826,9 @@ UserFunction(
       });
     } catch (errr) {
       return mesage.error(
-        errr + "\n\ncommand: mediafire",
+        errr + "\n\ncommand: song",
         errr,
-        "*_File not found!!_*"
+        "*_song not found!!_*"
       );
     }
   }
@@ -1849,7 +1849,7 @@ UserFunction(
       }
       let resulr = await yts(query);
       let MTYPE =
-        "*ᴀsᴛᴀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n\n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " +
+        "*ᴍᴀꜱᴛᴇʀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n\n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " +
         query +
         "_ \n\n";
       let DAT = 1;
@@ -1860,7 +1860,7 @@ UserFunction(
           " : " +
           resulted.title +
           (resulted.timestamp ? "(" + resulted.timestamp + ")" : "") +
-          "*\n*Url : " +
+          "*\n*Uʀʟ : " +
           resulted.url +
           "*";
       }
@@ -1914,7 +1914,7 @@ UserFunction(
         loginfo.on("finish", succes);
       });
       var contextInfoMsg = {
-        ...(await mesg.bot.contextInfo(Config.botname, "ʏᴛᴅʟ ᴠɪᴅᴇᴏ")),
+        ...(await mesg.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ʏᴛᴅʟ ᴠɪᴅᴇᴏ")),
       };
       let MTYPE = {
         [documtn]: fs.readFileSync(dir),
@@ -1943,7 +1943,7 @@ UserFunction(
         }
         let RESULT = await yt.download(resultFile[1], VIDTYPE);
         var contextInfoMsg = {
-          ...(await mesg.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ")),
+          ...(await mesg.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ")),
         };
         let filename = fileDat.title || RESULT || resultFile[1];
         if (RESULT) {
@@ -2003,7 +2003,7 @@ UserFunction(
         indo.on("finish", success);
       });
       var ContextInfo = {
-        ...(await message.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ")),
+        ...(await message.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ")),
       };
       let MTYPE = {
         [documtent]: fs.readFileSync(dir),
@@ -2025,7 +2025,7 @@ UserFunction(
           quality: "best",
         });
         var ContextInfo = {
-          ...(await message.bot.contextInfo(Config.botname, "ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ")),
+          ...(await message.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ")),
         };
         if (FileDir) {
           await message.bot.sendMessage(message.jid, {
@@ -2101,7 +2101,7 @@ UserFunction(
         return await message.send("*_Uhh dear, video not found_*");
       }
       var ContextInfo = {
-        ...(await message.bot.contextInfo(Config.botname, "ʏᴛᴅᴏᴄ ᴍᴘ3 ʏᴏᴜᴛᴜʙᴇ")),
+        ...(await message.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ᴍᴘ3 ʏᴏᴜᴛᴜʙᴇ")),
       };
       let MTYPE = {
         document: {
@@ -2134,7 +2134,7 @@ cmd(
   async (message, query, { isCreator: onText }) => {
     if (message.quoted && message.text) {
       const MenuOptions = message.quoted.text.split("\n");
-      if (MenuOptions[0].includes("ᴀsᴛᴀ-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")) {
+      if (MenuOptions[0].includes("ᴍᴀꜱᴛᴇʀ-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")) {
         const Chosen = MenuOptions.find((input) => input.startsWith("Url :"));
         let Inputeddata = Chosen.replace("Url :", "").trim();
         try {
@@ -2202,7 +2202,7 @@ cmd(
         } catch (err) {
           return await message.reply("Error While Downloading Video : " + err);
         }
-      } else if (MenuOptions[0].includes("ᴀsᴛᴀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ")) {
+      } else if (MenuOptions[0].includes("ᴍᴀꜱᴛᴇʀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ")) {
         let data = "*" + message.text.split(" ")[0] + " : ";
         const OPT2 = MenuOptions.find((options) => options.startsWith(data));
         if (OPT2) {
@@ -2261,7 +2261,7 @@ cmd(
             );
           }
         }
-      } else if (MenuOptions[0].includes("ᴀsᴛᴀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
+      } else if (MenuOptions[0].includes("ᴍᴀꜱᴛᴇʀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
         let request = "*" + message.text.split(" ")[0] + " : ";
         const Options = MenuOptions.find((selected) =>
           selected.startsWith(request)
@@ -2278,10 +2278,10 @@ cmd(
               },
             });
             let results = await download(Reqeusts);
-            let CapData = "*App Name :* " + results.name;
-            CapData += "\n*App id        :* " + results.package;
-            CapData += "\n*Last Up       :* " + results.lastup;
-            CapData += "\n*App Size     :* " + results.size;
+            let CapData = "*𝐀ᴘᴘ 𝐍ᴀᴍᴇ :* " + results.name;
+            CapData += "\n*𝐀ᴘᴘ 𝐈𝐃        :* " + results.package;
+            CapData += "\n*𝐋ᴀꜱᴛ 𝐔ᴘ       :* " + results.lastup;
+            CapData += "\n*𝐀ᴘᴘ 𝐒ɪᴢᴇ     :* " + results.size;
             CapData += "\n               \n" + Config.caption;
             let DOCTYPE = {
               document: {
