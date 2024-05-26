@@ -1,5 +1,5 @@
-const emojis = ['⚖']
-const mojis = ['⚖']        
+const emojis = ['👨‍💻']
+const mojis = ['👨‍💻']        
 let bots = false;
 const { 
   smd,
