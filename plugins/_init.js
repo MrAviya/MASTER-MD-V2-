@@ -708,7 +708,7 @@ AdminFunction.cmd(
   async (message) => {
     try {
       const { commands: RanDon } = require("../lib");
-      let mVoid = "\n\t*ᴀsᴛᴀ ᴍᴅ ᴄᴏᴍᴍᴀɴᴅs ɪɴғᴏ*  \n";
+      let mVoid = "\n\t*​🇲​​🇦​​🇸​​🇹​​🇪​​🇷​ ​🇲​​🇩​ ​🇨​​🇴​​🇲​​🇲​​🇦​​🇳​​🇩​​🇸​ ​🇮​​🇳​​🇫​​🇴​*  \n";
       for (let RamDom = 0; RamDom < RanDon.length; RamDom++) {
         if (RanDon[RamDom].pattern == undefined) {
           continue;
