@@ -1782,7 +1782,7 @@ UserFunction(
   }
 );
 /*--------------------------------------*/
-smd({
+UserFunction({
    pattern: "song",
    alias: ["music"],
    desc: "Downloads audio from youtube.",
