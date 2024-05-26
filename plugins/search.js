@@ -26,7 +26,7 @@ UserFunction(
       const { shazam } = require(lib_dir);
       let data = await shazam(buff);
       if (!data || !data.status) return message.send(data);
-      let h = `*TITLE: _${data.title}_* \n*ARTIST: _${data.artists}_*\n *ALBUM:* _${data.album}_ `;
+      let h = `*🔰TITLE: _${data.title}_* \n*🔰ARTIST: _${data.artists}_*\n *🔰ALBUM:* _${data.album}_ `;
       await message.bot.sendUi(
         message.jid,
         { caption: h },
@@ -55,7 +55,7 @@ UserFunction(
       message.react("🔍");
       if (!match)
         return message.reply(
-          `Give me a user name like ${prefix}github SuhailTechInfo`
+          `Give me a user name like ${prefix}github MrMasterOfc`
         );
 
       const { data } = await axios(`https://api.github.com/users/${match}`);
@@ -68,7 +68,7 @@ UserFunction(
         message.jid,
         {
           image: { url: gitdata.avatar_url },
-          caption: `    *[ GITHUB USER INFO ]*
+          caption: `    *[ 👨‍💻GITHUB USER INFO👨‍💻 ]*
 
 🚩 *Id :* ${gitdata.id}
 🔖 *Nickname :* ${gitdata.name}
@@ -171,16 +171,16 @@ UserFunction(
       if (!data || data.cod === "404")
         return await message.reply(`*_Please provide valid city name!_*`);
       let textw = `*🌟Weather of  ${text}*\n\n`;
-      textw += `*Weather:-* ${data.weather[0].main}\n`;
-      textw += `*Description:-* ${data.weather[0].description}\n`;
-      textw += `*Avg Temp:-* ${data.main.temp}\n`;
-      textw += `*Feels Like:-* ${data.main.feels_like}\n`;
-      textw += `*Pressure:-* ${data.main.pressure}\n`;
-      textw += `*Humidity:-* ${data.main.humidity}\n`;
-      textw += `*Humidity:-* ${data.wind.speed}\n`;
-      textw += `*Latitude:-* ${data.coord.lat}\n`;
-      textw += `*Longitude:-* ${data.coord.lon}\n`;
-      textw += `*Country:-* ${data.sys.country}\n\n`;
+      textw += `*⚖ Weather:-* ${data.weather[0].main}\n`;
+      textw += `*⚖ Description:-* ${data.weather[0].description}\n`;
+      textw += `*⚖ Avg Temp:-* ${data.main.temp}\n`;
+      textw += `*⚖ Feels Like:-* ${data.main.feels_like}\n`;
+      textw += `*⚖ Pressure:-* ${data.main.pressure}\n`;
+      textw += `*⚖ Humidity:-* ${data.main.humidity}\n`;
+      textw += `*⚖ Humidity:-* ${data.wind.speed}\n`;
+      textw += `*⚖ Latitude:-* ${data.coord.lat}\n`;
+      textw += `*⚖ Longitude:-* ${data.coord.lon}\n`;
+      textw += `*⚖ Country:-* ${data.sys.country}\n\n`;
       textw += caption;
       message.bot.sendUi(
         message.jid,
@@ -246,11 +246,11 @@ UserFunction(
       for (let i = 0; i < dat.data.length; i++) {
         let j = i + 1;
         text += `\n*--------------------- MATCH ${i}-------------------*`;
-        text += "\n*Match Name:* " + dat.data[i].name;
-        text += "\n*Match Status:* " + dat.data[i].status;
-        text += "\n*Match Date:* " + dat.data[i].dateTimeGMT;
-        text += "\n*Match Started:* " + dat.data[i].matchStarted;
-        text += "\n*Match Ended:* " + dat.data[i].matchEnded;
+        text += "\n*📃 Match Name:* " + dat.data[i].name;
+        text += "\n*📃 Match Status:* " + dat.data[i].status;
+        text += "\n*📃 Match Date:* " + dat.data[i].dateTimeGMT;
+        text += "\n*📃 Match Started:* " + dat.data[i].matchStarted;
+        text += "\n*📃 Match Ended:* " + dat.data[i].matchEnded;
       }
       return await message.reply(text);
     } catch (e) {
@@ -274,15 +274,15 @@ UserFunction(
     try {
       if (!text)
         return message.reply(
-          `*_Uhh please, give me a query_*\n*_Example : ${prefix}google asta md._*`
+          `*_Uhh please, give me a query_*\n*_Example : ${prefix}google master md._*`
         );
       let google = require("google-it");
       google({ query: text }).then((res) => {
         let msg = `Google Search From : ${text} \n\n`;
         for (let g of res) {
-          msg += `➣ *Title : ${g.title}*\n`;
-          msg += `➣ *Description :* ${g.snippet}\n`;
-          msg += `➣ *Link :* _${g.link}_\n\n\n`;
+          msg += `➣ *⚖ Title : ${g.title}*\n`;
+          msg += `➣ *⚖ Description :* ${g.snippet}\n`;
+          msg += `➣ *⚖ Link :* _${g.link}_\n\n\n`;
         }
 
         return message.reply(msg);
@@ -492,12 +492,12 @@ UserFunction(
   async (message, text) => {
     if (!text)
       return await message.reply(
-        "Give Me Number without +\n\n" + prefix + "onwa 2349027862116"
+        "Give Me Number without +\n\n" + prefix + "onwa 94720797915"
       );
     var inputnumber = text.split(" ")[0];
     if (!inputnumber.includes("x"))
       return message.reply(
-        `*You did not add x*\n\n"+prefix+"onwa 2349027862116  \n ${caption}`.trim()
+        `*You did not add x*\n\n"+prefix+"onwa 94720797915  \n ${caption}`.trim()
       );
     message.reply(
       `*Searching for WhatsApp account in given range...* \n ${caption}`.trim()
@@ -601,8 +601,8 @@ UserFunction(
       const { artist, lyrics, title } = data.result;
 
       const lyricsMessage = `
-  *Song:* ${title}
-  *Artist:* ${artist}
+  *👨‍💻Song:* ${title}
+  *🎉Artist:* ${artist}
   
   ${lyrics}
   `;
