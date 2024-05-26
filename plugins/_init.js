@@ -511,31 +511,31 @@ AdminFunction.cmd(
         MenuTopHeader +
         "\n" +
         MenuSideHeader +
-        " ＵＳＥＲ:- " +
+        "𝓤𝓼𝓮𝓻:- " +
         ownername +
         "\n" +
         MenuSideHeader +
-        " ＭＯＤＥ:- " +
+        "𝓜𝓸𝓭𝓮:- " +
         Config.WORKTYPE +
         "\n" +
         MenuSideHeader +
-        " ＣＭＤＳ:- " +
+        "𝓒𝓶𝓭𝓼:- " +
         commands.length +
         "\n" +
         MenuSideHeader +
-        " ＡＬＩＶＥ:- " +
+        "𝓐𝓵𝓲𝓿𝓮:- " +
         runtime(process.uptime()) +
         "\n" +
         MenuSideHeader +
-        " ＲＡＭ:- " +
+        "𝓡𝓪𝓶:- " +
         formatp(os.totalmem() - os.freemem()) +
         "\n" +
         MenuSideHeader +
-        " ＴＩＭＥ:- " +
+        "𝓣𝓲𝓶𝓮:- " +
         currentTime +
         "\n" +
         MenuTopFooter +
-        "\n\t```❑ ᴘᴀᴛᴄʜ 𝟹.𝟻.𝟶 ❑```\n " +
+        "\n\t```❑ MASTER-MD-V2 ❑```\n " +
         readmore +
         "\n";
       for (const Texts in cmdlets) {
