@@ -578,7 +578,7 @@ AdminFunction.cmd(
           buttons:
             "\n            #button:cta_url | display_text : Get Your Own| id:" +
             github +
-            " /# \n            #button:cta_url | display_text : Support| id:" +
+            " /# \n            #button:cta_url | display_text : Founder| id:" +
             SupportGc +
             " /# \n            #button:cta_url | display_text : Channel | id:" +
             ChannelLink +
@@ -596,7 +596,7 @@ AdminFunction.cmd(
 );
 let tglink = "https://t.me/mrsahanofc";
 let ChannelLink = "https://whatsapp.com/channel/0029VaWWZa1G3R3c4TPADo0M";
-let SupportGc = "https://chat.whatsapp.com/C9vNmipX64o0FbrVz8QPhX";
+let SupportGc = "https://wa.me/+94720797915";
 amd(
   {
     pattern: "alive",
