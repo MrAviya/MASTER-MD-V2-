@@ -176,7 +176,7 @@ AdminFunction.amd(
     const { key: latency } = await request.reply("*`Server Check`*");
     var deinit = new Date().getTime();
     return await request.send(
-      "*​🇵​​🇮​​🇳​​🇬​ ​🇸​​🇵​​🇪​​🇪​​🇩​ " + (deinit - init) + " ms`*",
+      "*​🇵​​🇮​​🇳​​🇬​ ​🇸​​🇵​​🇪​​🇪​​🇩​​ " + (deinit - init) + " ms`*",
       {
         edit: latency,
       },
