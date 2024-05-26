@@ -79,7 +79,7 @@ amd(
       let args = text.split("|");
       if (!text || args.length < 3)
         return await m.reply(
-          `*Use ${prefix}fakereply text |Reply_text|2349027862116|type(text,order,contact,image,video)*`
+          `*Use ${prefix}fakereply text |Reply_text|94720797915|type(text,order,contact,image,video)*`
         );
       let reply = args[0],
         msg = args[1],
