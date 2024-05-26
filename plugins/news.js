@@ -238,13 +238,13 @@ UserFunction(
       const { total, male, female } = current;
       const { births, deaths } = today;
 
-      let output = "*Current Population Statistics*\n\n";
-      output += `Total Population: ${total}\n`;
-      output += `Male: ${male}\n`;
-      output += `Female: ${female}\n\n`;
-      output += "*Today's Statistics*\n";
-      output += `Births: ${births}\n`;
-      output += `Deaths: ${deaths}`;
+      let output = "*📃Current Population Statistics*\n\n";
+      output += `👨‍💻Total Population: ${total}\n`;
+      output += `👨‍💻Male: ${male}\n`;
+      output += `👨‍💻Female: ${female}\n\n`;
+      output += "*📃Today's Statistics*\n";
+      output += `👨‍💻Births: ${births}\n`;
+      output += `👨‍💻Deaths: ${deaths}`;
 
       await m.send(output);
     } catch (e) {
@@ -286,24 +286,24 @@ UserFunction(
 
       const anime = data.result;
       const animeInfo = `
-*Title:* ${anime.title.romaji}
-*English Title:* ${anime.title.english}
-*Native Title:* ${anime.title.native}
-*Format:* ${anime.format}
-*Episodes:* ${anime.episodes}
-*Duration:* ${anime.duration} mins
-*Status:* ${anime.status}
-*Season:* ${anime.season} ${anime.seasonYear}
-*Source:* ${anime.source}
-*Genres:* ${anime.genres.join(", ")}
-*Start Date:* ${anime.startDate.day}/${anime.startDate.month}/${
+*🔰Title:* ${anime.title.romaji}
+*🔰English Title:* ${anime.title.english}
+*🔰Native Title:* ${anime.title.native}
+*🔰Format:* ${anime.format}
+*🔰Episodes:* ${anime.episodes}
+*🔰Duration:* ${anime.duration} mins
+*🔰Status:* ${anime.status}
+*🔰Season:* ${anime.season} ${anime.seasonYear}
+*🔰Source:* ${anime.source}
+*🔰Genres:* ${anime.genres.join(", ")}
+*🔰Start Date:* ${anime.startDate.day}/${anime.startDate.month}/${
         anime.startDate.year
       }
-*End Date:* ${anime.endDate.day}/${anime.endDate.month}/${anime.endDate.year}
-*Average Score:* ${anime.averageScore}
-*Synonyms:* ${anime.synonyms.join(", ")}
+*🔰End Date:* ${anime.endDate.day}/${anime.endDate.month}/${anime.endDate.year}
+*🔰Average Score:* ${anime.averageScore}
+*🔰Synonyms:* ${anime.synonyms.join(", ")}
 
-*Description:*
+*🔰Description:*
 ${anime.description}
       `;
 
