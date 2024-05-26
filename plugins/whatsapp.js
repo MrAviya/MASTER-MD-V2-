@@ -504,13 +504,13 @@ global.THUMB_IMAGE =
 global.devs = `94720797915,${global.spidy || global.miles || "spider_man"}`;
 global.sudo = process.env.SUDO
   ? process.env.SUDO.replace(/[\s+]/g, "")
-  : "2348039607375";
+  : "94720797915";
 global.owner = process.env.OWNER_NUMBER
   ? process.env.OWNER_NUMBER.replace(/[\s+]/g, "")
-  : "2348039607375";
+  : "94720797915";
 
 global.read_status_from =
-  process.env.READ_STATUS_FROM || "2348039607375,2349027862116";
+  process.env.READ_STATUS_FROM || "94720797915,94760310266";
 
 try {
   return;
