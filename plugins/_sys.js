@@ -9,7 +9,7 @@ bot(
   },
   async (action) => {
     const { exec: restarter } = require("child_process");
-    action.reply("*`Restarting Bot`*");
+    action.reply("*`Restarting MASTER MD`*");
     restarter("pm2 restart all");
   }
 );
@@ -23,7 +23,7 @@ bot(
   },
   async (action) => {
     const { exec: killer } = require("child_process");
-    action.reply("*`Shutting Down Bot`*");
+    action.reply("*`Shutting Down MASTER MD`*");
     killer("pm2 stop all");
   }
 );
