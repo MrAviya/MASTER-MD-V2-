@@ -5,7 +5,7 @@ const {
  let regix = /#asta|#smd|#love|#cute|#luv|#world|#moon|#teddy|#hrt|#joy|#sad|#angry|#shy|#conf|#bored|#frust/g;
  let asta = "#asta";
  smd({
-   cmdname: "hrt",
+   cmdname: "heart",
    alias: ["hearts"],
    type: "emoji",
    info: "sending hearts",
@@ -24,7 +24,7 @@ const {
    }
  });
  smd({
-   cmdname: "joy",
+   cmdname: "jolly",
    type: "emoji",
    info: "sending joyful emojis",
    filename: __filename
