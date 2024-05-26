@@ -176,7 +176,7 @@ AdminFunction.amd(
     const { key: latency } = await request.reply("*`Server Check`*");
     var deinit = new Date().getTime();
     return await request.send(
-      "*​🇵​​🇮​​🇳​​🇬​ ​🇸​​🇵​​🇪​​🇪​​🇩​​ " + (deinit - init) + " ms`*",
+      "*`ᴘɪɴɢ ꜱᴘᴇᴇᴅ " + (deinit - init) + " ms`*",
       {
         edit: latency,
       },
@@ -511,27 +511,27 @@ AdminFunction.cmd(
         MenuTopHeader +
         "\n" +
         MenuSideHeader +
-        "𝓤𝓼𝓮𝓻:- " +
+        " Ｕꜱᴇʀ:- " +
         ownername +
         "\n" +
         MenuSideHeader +
-        "𝓜𝓸𝓭𝓮:- " +
+        " Ｍᴏᴅᴇ:- " +
         Config.WORKTYPE +
         "\n" +
         MenuSideHeader +
-        "𝓒𝓶𝓭𝓼:- " +
+        " Ｃᴍᴅꜱ:- " +
         commands.length +
         "\n" +
         MenuSideHeader +
-        "𝓐𝓵𝓲𝓿𝓮:- " +
+        " Ａʟɪᴠᴇ:- " +
         runtime(process.uptime()) +
         "\n" +
         MenuSideHeader +
-        "𝓡𝓪𝓶:- " +
+        " Ｒᴀᴍ:- " +
         formatp(os.totalmem() - os.freemem()) +
         "\n" +
         MenuSideHeader +
-        "𝓣𝓲𝓶𝓮:- " +
+        " Ｔɪᴍᴇ:- " +
         currentTime +
         "\n" +
         MenuTopFooter +
@@ -594,9 +594,9 @@ AdminFunction.cmd(
     }
   }
 );
-let tglink = "https://t.me/+tBdXzBsRBAMzNmFk";
-let ChannelLink = "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z";
-let SupportGc = "https://chat.whatsapp.com/Fb0ejJQeiPA08T0FB5H20g";
+let tglink = "https://t.me/mrsahanofc";
+let ChannelLink = "https://whatsapp.com/channel/0029VaWWZa1G3R3c4TPADo0M";
+let SupportGc = "https://chat.whatsapp.com/C9vNmipX64o0FbrVz8QPhX";
 amd(
   {
     pattern: "alive",
@@ -611,7 +611,7 @@ amd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/z20pSwu.jpeg",
+            "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -628,13 +628,13 @@ amd(
           const quoteText = `\n\n*"${quote.result.body}"*\n_- ${quote.result.author}_`;
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 3.5.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `ᴍᴀꜱᴛᴇʀ-ᴍᴅ\n\n*ᴘɪɴɢ:* ${pingSeconds} ꜱᴇᴄᴏɴᴅꜱ${quoteText}\n\nᴍᴀꜱᴛᴇʀ ᴍᴅ`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/lIo3cM2.jpeg",
+            "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -650,13 +650,13 @@ amd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 3.5.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds\n\n\n${fact.result.fact}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `ᴍᴀꜱᴛᴇʀ-ᴍᴅ\n\n*ᴘɪɴɢ:* ${pingSeconds} ꜱᴇᴄᴏɴᴅꜱ\n\n\n${fact.result.fact}\n\nᴍᴀꜱᴛᴇʀ-ᴍᴅ`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://i.imgur.com/OQOH4Gn.jpeg",
+            "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -672,7 +672,7 @@ amd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `ᴀsᴛᴀ ᴍᴅ 3.5.𝟶 ᴘᴀᴛᴄʜ\n\n*Ping:* ${pingSeconds} seconds\n\n\n${line.result}\n\nᴀsᴛᴀ ᴍᴅ`;
+          const captionText = `ᴍᴀꜱᴛᴇʀ-ᴍᴅ\n\n*ᴘɪɴɢ:* ${pingSeconds} ꜱᴇᴄᴏɴᴅꜱ\n\n\n${line.result}\n\nᴍᴀꜱᴛᴇʀ ᴍᴅ`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
@@ -708,7 +708,7 @@ AdminFunction.cmd(
   async (message) => {
     try {
       const { commands: RanDon } = require("../lib");
-      let mVoid = "\n\t*​🇲​​🇦​​🇸​​🇹​​🇪​​🇷​ ​🇲​​🇩​ ​🇨​​🇴​​🇲​​🇲​​🇦​​🇳​​🇩​​🇸​ ​🇮​​🇳​​🇫​​🇴​*  \n";
+      let mVoid = "\n\t*Mᴀꜱᴛᴇʀ Mᴅ Cᴏᴍᴍᴀɴᴅs Iɴғᴏ*  \n";
       for (let RamDom = 0; RamDom < RanDon.length; RamDom++) {
         if (RanDon[RamDom].pattern == undefined) {
           continue;
@@ -889,7 +889,7 @@ AdminFunction.cmd(
         if (
           read.includes("function") &&
           match.function &&
-          message.isSuhail &&
+          message.isAstro &&
           match.pattern !== "file"
         ) {
           init.push("*🧩Function:* " + match.function.toString());
@@ -968,7 +968,7 @@ amd(
     filename: __filename,
   },
   async (message) => {
-    const channelMessage = `𝘼𝙎𝙏𝘼 𝙈𝘿 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝙎𝙐𝙋𝙋𝙊𝙍𝙏\n\n _ʜᴇʏ ʜᴇʀᴇ's ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ, ᴘʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ ᴜs ᴛᴏ ᴋᴇᴇᴘ ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ᴀʟɪᴠᴇ_\n *ʟɪɴᴋ:* https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z\n\n ${Config.botname} *WORKS*`;
+    const channelMessage = `ᴍᴀꜱᴛᴇʀ ᴍᴅ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴄʜᴀɴɴᴇʟ\n\n _ʜᴇʏ ʜᴇʀᴇ's ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ, ᴘʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ ᴜs ᴛᴏ ᴋᴇᴇᴘ ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ᴀʟɪᴠᴇ_\n *ʟɪɴᴋ:* https://whatsapp.com/channel/0029VaWWZa1G3R3c4TPADo0M\n\n ${Config.botname} *ᴡᴏʀᴋꜱ*`;
 
     const contextInfo = {
       forwardingScore: 999,
@@ -987,7 +987,7 @@ amd(
     filename: __filename,
   },
   async (message) => {
-    const SupportMsg = `𝘼𝙎𝙏𝘼 𝙈𝘿 𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙧𝙤𝙪𝙥\n\n *ʟɪɴᴋ:* https://chat.whatsapp.com/GzKCborGlGN41XSHtslLri\n\n ${Config.botname} *WORKS*`;
+    const SupportMsg = `ᴍᴀꜱᴛᴇʀ ᴍᴅ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ɢʀᴏᴜᴘ\n\n *ʟɪɴᴋ:* https://chat.whatsapp.com/C9vNmipX64o0FbrVz8QPhX\n\n ${Config.botname} *ᴡᴏʀᴋꜱ*`;
 
     const contextInfo = {
       forwardingScore: 999,
