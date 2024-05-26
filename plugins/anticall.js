@@ -1,4 +1,4 @@
-let antiCallMessage = process.env.ANTICALL_MESSAGE || "```Hii this is WASI-Md a Personal Assistant!!\n\n\tSorry for now, we cannot receive calls, whether in a group or personal \n\n if you need help or request features please chat owner\n\n\nPowered by WASI-MD-V2```";
+let antiCallMessage = process.env.ANTICALL_MESSAGE || "```Hii this is MASTER MD a Personal Assistant!!\n\n\tSorry for now, we cannot receive calls, whether in a group or personal \n\n if you need help or request features please chat owner\n\n\nPowered by MASTER-MD-V2```";
 let antiCallCountries = [];
 let antiCallusers = {};
 let bots = false;
