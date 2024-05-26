@@ -11,44 +11,6 @@ let {
  const speed = require("performance-now");
  const Config = require("../config");
  const cheerio = require("cheerio");
- smd(
-  {
-    pattern: "channel",
-    desc: "To check ping",
-    react: "🗨️",
-    category: "user",
-    filename: __filename,
-  },
-  async (message) => {
-    const channelMessage = `𝐖𝐀𝐒𝐈 𝐓𝐄𝐂𝐇 𝐎𝐅𝐅𝐈𝐂𝐀𝐋 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐂𝐇𝐀𝐍𝐍𝐋𝐄 𝐅𝐎𝐋𝐋𝐎𝐖 𝐑𝐄𝐐_\n *𝐋𝐈𝐍𝐊:* https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j\n\n ${Config.botname} *WORKS*`;
-
-    const contextInfo = {
-      forwardingScore: 999,
-      isForwarded: true,
-    };
-
-    await message.send(channelMessage, { contextInfo });
-  }
-);
-smd(
-  {
-    pattern: "support",
-    desc: "To check ping",
-    react: "🗨️",
-    category: "user",
-    filename: __filename,
-  },
-  async (message) => {
-    const SupportMsg = `𝐖𝐀𝐒𝐈 𝐌𝐃 𝐕2 𝐎𝐅𝐅𝐈𝐂𝐀𝐋 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏\n\n *ʟɪɴᴋ:*https://chat.whatsapp.com/Dd2RCJsumFWBfQ6290pDy8 \n\n ${Config.botname} *WORKS*`;
-
-    const contextInfo = {
-      forwardingScore: 999,
-      isForwarded: true,
-    };
-
-    await message.send(SupportMsg, { contextInfo });
-  }
-);
  smd({
    cmdname: "listmessage",
    alias: ["countmessage", "msgcount"],
