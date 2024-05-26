@@ -4,7 +4,7 @@ if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 global.port =process.env.PORT
 global.appUrl=process.env.APP_URL || ""
 global.email ="astromedia0010@gmail.com"
-global.location="Astro,World"
+global.location="Master,World"
 
 
 global.mongodb= process.env.MONGODB_URI || "mongodb+srv://sam:sam@cluster0.u1smxsv.mongodb.net/?retryWrites=true&w=majority"
@@ -12,7 +12,7 @@ global.allowJids= process.env.ALLOW_JID || "null"
 global.blockJids= process.env.BLOCK_JID || "null"
 global.DATABASE_URL = process.env.DATABASE_URL || ""
 
-global.timezone= process.env.TZ || process.env.TIME_ZONE || "Africa/Lagos";
+global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/colombo";
 global.github=process.env.GITHUB|| "https://github.com/Astropeda/Asta-Md";
 global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z";
 global.website=process.env.GURL || "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z" ; 
