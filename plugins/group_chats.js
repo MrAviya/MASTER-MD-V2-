@@ -127,7 +127,7 @@ UserFunction(
         var newGroupLink = "" + newlink + NewGCLINK;
         var ContextMSG = {
           externalAdReply: {
-            title: "𝗔𝗦𝗧𝗔-𝗠𝗗",
+            title: "MASTER-MD",
             body: "" + SuccessMsg,
             renderLargerThumbnail: true,
             thumbnail: log0,
@@ -189,7 +189,7 @@ UserFunction(
           current_data.toString().padStart(2, "0");
         var _0x56eaaf = {
           externalAdReply: {
-            title: "𝗔𝗦𝗧𝗔-𝗠𝗗",
+            title: "MASTER-MD",
             body: gInfoData.subject,
             renderLargerThumbnail: true,
             thumbnail: log0,
@@ -941,13 +941,13 @@ smd(
         mjids.find((admin_data) => admin_data.admin === "superadmin")?.id ||
         false;
       let dat_msg = `
-*「 INFO GROUP 」*
-*▢ ID :* • ${jids.id}
-*▢ NAME :* • ${jids.subject}
-*▢ Members :* • ${jids.participants.length}
-*▢ Group Owner :* • ${info ? "wa.me/" + info.split("@")[0] : "notFound"}
-*▢ Admins :* • ${dta}
-*▢ Description :* • ${jids.desc?.toString() || "unknown"}
+*「 📃INFO GROUP📃 」*
+*▢👨‍💻 ID :* • ${jids.id}
+*▢👨‍💻 NAME :* • ${jids.subject}
+*▢👨‍💻 Members :* • ${jids.participants.length}
+*▢👨‍💻 Group Owner :* • ${info ? "wa.me/" + info.split("@")[0] : "notFound"}
+*▢👨‍💻 Admins :* • ${dta}
+*▢👨‍💻 Description :* • ${jids.desc?.toString() || "unknown"}
 `;
       let dat = isMongodb
         ? await sck.findOne({
