@@ -507,27 +507,27 @@ AdminFunction.cmd(
         MenuTopHeader +
         "\n" +
         MenuSideHeader +
-        " Ｕꜱᴇʀ:- " +
+        " ⚖Ｕꜱᴇʀ:- " +
         ownername +
         "\n" +
         MenuSideHeader +
-        " Ｍᴏᴅᴇ:- " +
+        " 👏Ｍᴏᴅᴇ:- " +
         Config.WORKTYPE +
         "\n" +
         MenuSideHeader +
-        " Ｃᴍᴅꜱ:- " +
+        " 📃Ｃᴍᴅꜱ:- " +
         commands.length +
         "\n" +
         MenuSideHeader +
-        " Ａʟɪᴠᴇ:- " +
+        " 🎉Ａʟɪᴠᴇ:- " +
         runtime(process.uptime()) +
         "\n" +
         MenuSideHeader +
-        " Ｒᴀᴍ:- " +
+        " ✨Ｒᴀᴍ:- " +
         formatp(os.totalmem() - os.freemem()) +
         "\n" +
         MenuSideHeader +
-        " Ｔɪᴍᴇ:- " +
+        " 🎊Ｔɪᴍᴇ:- " +
         currentTime +
         "\n" +
         MenuTopFooter +
