@@ -465,11 +465,11 @@ AdminFunction.cmd(
         menu.toLowerCase().includes("v1")
       ) {
         MenuTopHeader = "╭━━━〔 *" + botname + "* 〕━━━┈⊷";
-        MenuSideHeader = "┃✵│";
+        MenuSideHeader = "┃👨‍💻│";
         MenuTopFooter = "┃✵╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
         CategoryStartHeader = "╭─────────────┈⊷\n│「";
         CategoryEndHeader = "」\n╰┬────────────┈⊷";
-        CmdNameLine = "││◦➛";
+        CmdNameLine = "│⚖│◦➛";
         CategoryFullEnd = "│╰────────────┈⊷\n╰─────────────┈⊷";
       } else if (
         MenuType == 2 ||
@@ -477,19 +477,19 @@ AdminFunction.cmd(
         menu.toLowerCase().includes("v2")
       ) {
         MenuTopHeader = "╭═══ *" + botname + "*  ═══⊷\n┃❃╭──────────────";
-        MenuSideHeader = "┃❃│";
+        MenuSideHeader = "┃👨‍💻│";
         MenuTopFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         CategoryStartHeader = "╭─❏";
         CategoryEndHeader = "❏";
-        CmdNameLine = "┃❃│";
+        CmdNameLine = "┃⚖│";
         CategoryFullEnd = "┃❃╰───────────────\n╰═════════════════⊷";
       } else {
         MenuTopHeader = "╭═══〘  " + botname + "  〙═══⊷❍\n┃✰╭──────────────";
-        MenuSideHeader = "┃✰│";
+        MenuSideHeader = "┃👨‍💻│";
         MenuTopFooter = "┃✰╰───────────────\n╰═════════════════⊷";
         CategoryStartHeader = "╭════〘";
         CategoryEndHeader = "〙════⊷❍";
-        CmdNameLine = "┃✰│";
+        CmdNameLine = "┃⚖│";
         CategoryFullEnd = "┃✰╰─────────────────❍\n╰══════════════════⊷❍";
       }
       const cmdlets = {};
@@ -511,31 +511,31 @@ AdminFunction.cmd(
         MenuTopHeader +
         "\n" +
         MenuSideHeader +
-        " Ｕꜱᴇʀ:- " +
+        "🐱‍👤 Ｕꜱᴇʀ:- " +
         ownername +
         "\n" +
         MenuSideHeader +
-        " Ｍᴏᴅᴇ:- " +
+        "🐱‍👤 Ｍᴏᴅᴇ:- " +
         Config.WORKTYPE +
         "\n" +
         MenuSideHeader +
-        " Ｃᴍᴅꜱ:- " +
+        "🐱‍👤 Ｃᴍᴅꜱ:- " +
         commands.length +
         "\n" +
         MenuSideHeader +
-        " Ａʟɪᴠᴇ:- " +
+        "🐱‍👤 Ａʟɪᴠᴇ:- " +
         runtime(process.uptime()) +
         "\n" +
         MenuSideHeader +
-        " Ｒᴀᴍ:- " +
+        "🐱‍👤 Ｒᴀᴍ:- " +
         formatp(os.totalmem() - os.freemem()) +
         "\n" +
         MenuSideHeader +
-        " Ｔɪᴍᴇ:- " +
+        "🐱‍👤 Ｔɪᴍᴇ:- " +
         currentTime +
         "\n" +
         MenuTopFooter +
-        "\n\t```❑ MASTER-MD-V2 ❑```\n " +
+        "\n\t```⁜ MASTER-MD-V2 ⁜```\n " +
         readmore +
         "\n";
       for (const Texts in cmdlets) {
