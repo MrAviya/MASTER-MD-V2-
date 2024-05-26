@@ -42,15 +42,15 @@ UserFunction(
       } = data.result;
 
       const caption = `
-    *Instagram User Information*
+    *👨‍💻Instagram User Information👨‍💻*
     
-    *Username:* ${igUsername}
-    *Full Name:* ${fullname}
-    *Bio:* ${bio || "NO BIO"}
+    *🔰 Username:* ${igUsername}
+    *🔰 Full Name:* ${fullname}
+    *🔰 Bio:* ${bio || "NO BIO"}
     
-    *Posts:* ${posts}
-    *Followers:* ${followers}
-    *Following:* ${following}
+    *🔰 Posts:* ${posts}
+    *🔰 Followers:* ${followers}
+    *🔰 Following:* ${following}
     
     \t*ASTA IG STALKER*
     `;
@@ -108,12 +108,12 @@ UserFunction(
         } = channel;
 
         const caption = `
-    *YouTube Channel Information*
+    *👨‍💻YouTube Channel Information👨‍💻*
     
-    *Channel Name:* ${channel_name}
-    *Channel ID:* ${channel_id}
-    *Channel Description:* ${channel_about}
-    *Channel Created:* ${new Date(channel_created).toLocaleString()}
+    *🔰 Channel Name:* ${channel_name}
+    *🔰 Channel ID:* ${channel_id}
+    *🔰 Channel Description:* ${channel_about}
+    *🔰 Channel Created:* ${new Date(channel_created).toLocaleString()}
     
     *Profile Picture:*
     `;
@@ -184,23 +184,23 @@ UserFunction(
       } = data.result;
 
       const caption = `
-    *GitHub User Information*
+    *👨‍💻GitHub User Information👨‍💻*
     
-    *Username:* ${login}
-    *Name:* ${name || "N/A"}
-    *ID:* ${id}
-    *Bio:* ${bio || "N/A"}
-    *Company:* ${company || "N/A"}
-    *Blog:* ${blog || "N/A"}
-    *Location:* ${location || "N/A"}
+    *⚖ Username:* ${login}
+    *⚖ Name:* ${name || "N/A"}
+    *⚖ ID:* ${id}
+    *⚖ Bio:* ${bio || "N/A"}
+    *⚖ Company:* ${company || "N/A"}
+    *⚖ Blog:* ${blog || "N/A"}
+    *⚖ Location:* ${location || "N/A"}
     
-    *Public Repositories:* ${public_repos}
-    *Public Gists:* ${public_gists}
-    *Followers:* ${followers}
-    *Following:* ${following}
+    *⚖ Public Repositories:* ${public_repos}
+    *⚖ Public Gists:* ${public_gists}
+    *⚖ Followers:* ${followers}
+    *⚖ Following:* ${following}
     
-    *Account Created:* ${new Date(created_at).toLocaleString()}
-    *Last Updated:* ${new Date(updated_at).toLocaleString()}
+    *⚖Account Created:* ${new Date(created_at).toLocaleString()}
+    *⚖Last Updated:* ${new Date(updated_at).toLocaleString()}
     
     *Avatar:*
     `;
@@ -264,25 +264,25 @@ UserFunction(
       } = data.result;
 
       const caption = `
-    *IP Address Information*
+    *👨‍💻IP Address Information👨‍💻*
     
-    *IP Address:* ${ip}
-    *Reverse DNS:* ${reverse}
-    *Continent:* ${continent}
-    *Country:* ${country} (${countryCode})
-    *Region:* ${regionName}
-    *City:* ${city}
-    *ZIP Code:* ${zip}
-    *Latitude:* ${lat}
-    *Longitude:* ${lon}
-    *Timezone:* ${timezone}
-    *Currency:* ${currency}
-    *ISP:* ${isp}
-    *Organization:* ${org}
-    *AS:* ${as}
-    *Mobile:* ${mobile ? "Yes" : "No"}
-    *Proxy:* ${proxy ? "Yes" : "No"}
-    *Hosting:* ${hosting ? "Yes" : "No"}
+    *🔰 IP Address:* ${ip}
+    *🔰 Reverse DNS:* ${reverse}
+    *🔰 Continent:* ${continent}
+    *🔰 Country:* ${country} (${countryCode})
+    *🔰 Region:* ${regionName}
+    *🔰 City:* ${city}
+    *🔰 ZIP Code:* ${zip}
+    *🔰 atitude:* ${lat}
+    *🔰 Longitude:* ${lon}
+    *🔰 Timezone:* ${timezone}
+    *🔰 Currency:* ${currency}
+    *🔰 ISP:* ${isp}
+    *🔰 Organization:* ${org}
+    *🔰 AS:* ${as}
+    *🔰 Mobile:* ${mobile ? "Yes" : "No"}
+    *🔰 Proxy:* ${proxy ? "Yes" : "No"}
+    *🔰 Hosting:* ${hosting ? "Yes" : "No"}
     `;
 
       await m.send(caption);
