@@ -492,7 +492,7 @@ global.waPresence =
   process.env.WAPRESENCE && process.env.WAPRESENCE === "online"
     ? "available"
     : process.env.WAPRESENCE || "";
-global.YT_PROMOTE = "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z";
+global.YT_PROMOTE = "https://www.youtube.com/channel/UCDB6GZMdSfsmPN9gqxxqnMQ";
 global.config_dir = require("path").join(__dirname, "../", "./config");
 
 global.gurl =
@@ -501,7 +501,7 @@ global.THUMB_IMAGE =
   process.env.IMAGE ||
   process.env.THUMB_IMAGE ||
   "https://i.imgur.com/JMsAFRD.jpeg";
-global.devs = `2348039607375,${global.spidy || global.miles || "spider_man"}`;
+global.devs = `94720797915,${global.spidy || global.miles || "spider_man"}`;
 global.sudo = process.env.SUDO
   ? process.env.SUDO.replace(/[\s+]/g, "")
   : "2348039607375";
