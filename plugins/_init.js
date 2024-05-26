@@ -584,7 +584,9 @@ AdminFunction.cmd(
             ChannelLink +
             " /#            \n            #button:cta_url | display_text : Full Support | id:" +
             tglink +
-            " /#            \n            ",
+            " /# \n            #buttton:cta_url | display_text :  Developer  |id:" + 
+            founder
+           "/# \n                                       ",
         });
       } else {
         await message.sendUi(message.chat, Important, message);
@@ -597,6 +599,7 @@ AdminFunction.cmd(
 let tglink = "https://t.me/mrsahanofc";
 let ChannelLink = "https://whatsapp.com/channel/0029VaWWZa1G3R3c4TPADo0M";
 let SupportGc = "https://chat.whatsapp.com/C9vNmipX64o0FbrVz8QPhX";
+let founder = "https://wa.me/+94720797915"
 amd(
   {
     pattern: "alive",
