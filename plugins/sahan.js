@@ -5,7 +5,8 @@ smd({ cmdname: "sahan", type: "developer", info: "info", filename: __filename },
  "> My Name is Sahan Maduwantha🎉✨" ,
     "> I am 18 Years Old😎✌",
     "> I am programming student🌹✔. I can coding Html,Javascript And other. this All these creations are my creations.😊💖",
-    "> I am student of Galewela central collage🐥😘"
+    "> I am student of Galewela central collage🐥😘",
+    "> Visit My Site https://mr-sahan-ofc.vercel.app/index.html"
   ];
 
   let editedMessage;
