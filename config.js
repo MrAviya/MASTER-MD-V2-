@@ -71,8 +71,8 @@ module.exports = {
   ownername:process.env.OWNER_NAME|| "αѕтяσ",
   errorChat : process.env.ERROR_CHAT || "",
   KOYEB_API : process.env.KOYEB_API  || "false",
-  REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
+  REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "neLbXXrp8bSDcohnp1CW5UEa",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || " 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",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   HEROKU_APP_NAME:process.env.HEROKU_APP_NAME|| "",
   antilink_values:process.env.ANTILINK_VALUES|| "all",
@@ -80,7 +80,7 @@ module.exports = {
   WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "private",
   LANG: ( process.env.THEME ||  "main"  ).toUpperCase(),
 };
-global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY || "";
+global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY || "345f70f1c3f2ecef4d718d33c14026f9";
 global.aitts_Voice_Id = process.env.AITTS_ID|| "37";
 global.rank = "updated" // Don't Touch
 global.isMongodb = false; // Don't Touch Else Bot Won't Work
