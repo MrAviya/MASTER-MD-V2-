@@ -465,19 +465,23 @@ AdminFunction.cmd(
         menu.toLowerCase().includes("v1")
       ) {
         MenuTopHeader = "╭━━━〔 *" + botname + "* 〕━━━┈⊷";
-        MenuSideHeader = "┃👨‍💻│";
+        MenuSideHeader = "┃✵│";
         MenuTopFooter = "┃✵╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
         CategoryStartHeader = "╭─────────────┈⊷\n│「";
         CategoryEndHeader = "」\n╰┬────────────┈⊷";
-        CmdNameLine = "│🔰│◦➛";
+        CmdNameLine = "││◦➛";
         CategoryFullEnd = "│╰────────────┈⊷\n╰─────────────┈⊷";
       } else if (
         MenuType == 2 ||
-	@@ -481,7 +481,7 @@ AdminFunction.cmd(
+        menu.trim().startsWith("2") ||
+        menu.toLowerCase().includes("v2")
+      ) {
+        MenuTopHeader = "╭═══ *" + botname + "*  ═══⊷\n┃❃╭──────────────";
+        MenuSideHeader = "┃❃│";
         MenuTopFooter = "┃❃╰───────────────\n╰═════════════════⊷";
         CategoryStartHeader = "╭─❏";
         CategoryEndHeader = "❏";
-        CmdNameLine = "┃🔰│";
+        CmdNameLine = "┃❃│";
         CategoryFullEnd = "┃❃╰───────────────\n╰═════════════════⊷";
       } else {
         MenuTopHeader = "╭═══〘  " + botname + "  〙═══⊷❍\n┃✰╭──────────────";
@@ -507,27 +511,27 @@ AdminFunction.cmd(
         MenuTopHeader +
         "\n" +
         MenuSideHeader +
-        " ⚖Ｕꜱᴇʀ:- " +
+        " Ｕꜱᴇʀ:- " +
         ownername +
         "\n" +
         MenuSideHeader +
-        " 👏Ｍᴏᴅᴇ:- " +
+        " Ｍᴏᴅᴇ:- " +
         Config.WORKTYPE +
         "\n" +
         MenuSideHeader +
-        " 📃Ｃᴍᴅꜱ:- " +
+        " Ｃᴍᴅꜱ:- " +
         commands.length +
         "\n" +
         MenuSideHeader +
-        " 🎉Ａʟɪᴠᴇ:- " +
+        " Ａʟɪᴠᴇ:- " +
         runtime(process.uptime()) +
         "\n" +
         MenuSideHeader +
-        " ✨Ｒᴀᴍ:- " +
+        " Ｒᴀᴍ:- " +
         formatp(os.totalmem() - os.freemem()) +
         "\n" +
         MenuSideHeader +
-        " 🎊Ｔɪᴍᴇ:- " +
+        " Ｔɪᴍᴇ:- " +
         currentTime +
         "\n" +
         MenuTopFooter +
@@ -612,6 +616,7 @@ amd(
               responseType: "arraybuffer",
             }
           );
+
           const quoteResponse = await axios.get(
             "https://api.maher-zubair.tech/misc/quote"
           );
@@ -619,10 +624,12 @@ amd(
           if (!quote || quote.status !== 200) {
             return await message.reply("*Failed to fetch a quote.*");
           }
+
           const quoteText = `\n\n*"${quote.result.body}"*\n_- ${quote.result.author}_`;
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
           const captionText = `ᴍᴀꜱᴛᴇʀ-ᴍᴅ\n\n*ᴘɪɴɢ:* ${pingSeconds} ꜱᴇᴄᴏɴᴅꜱ${quoteText}\n\nᴍᴀꜱᴛᴇʀ ᴍᴅ`;
+
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
@@ -632,6 +639,7 @@ amd(
               responseType: "arraybuffer",
             }
           );
+
           const factResponse = await axios.get(
             "https://api.maher-zubair.tech/misc/fact"
           );
@@ -639,9 +647,11 @@ amd(
           if (!fact || fact.status !== 200) {
             return await message.reply("*Failed to fetch a fact.*");
           }
+
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
           const captionText = `ᴍᴀꜱᴛᴇʀ-ᴍᴅ\n\n*ᴘɪɴɢ:* ${pingSeconds} ꜱᴇᴄᴏɴᴅꜱ\n\n\n${fact.result.fact}\n\nᴍᴀꜱᴛᴇʀ-ᴍᴅ`;
+
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
@@ -651,6 +661,7 @@ amd(
               responseType: "arraybuffer",
             }
           );
+
           const lineResponse = await axios.get(
             "https://api.maher-zubair.tech/misc/lines"
           );
@@ -658,14 +669,18 @@ amd(
           if (!line || line.status !== 200) {
             return await message.reply("*Failed to fetch a line.*");
           }
+
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
           const captionText = `ᴍᴀꜱᴛᴇʀ-ᴍᴅ\n\n*ᴘɪɴɢ:* ${pingSeconds} ꜱᴇᴄᴏɴᴅꜱ\n\n\n${line.result}\n\nᴍᴀꜱᴛᴇʀ ᴍᴅ`;
+
           return { image: imageBuffer.data, caption: captionText };
         },
       ];
+
       const randomDesign = designs[Math.floor(Math.random() * designs.length)];
       const messageData = await randomDesign();
+
       const message_options = {
         quoted: message,
         contextInfo: {
@@ -673,6 +688,7 @@ amd(
           isForwarded: true,
         },
       };
+
       return message.bot.sendUi(message.chat, messageData, message_options);
     } catch (error) {
       await message.error(
@@ -953,10 +969,12 @@ amd(
   },
   async (message) => {
     const channelMessage = `ᴍᴀꜱᴛᴇʀ ᴍᴅ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴄʜᴀɴɴᴇʟ\n\n _ʜᴇʏ ʜᴇʀᴇ's ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ, ᴘʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ ᴜs ᴛᴏ ᴋᴇᴇᴘ ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ᴀʟɪᴠᴇ_\n *ʟɪɴᴋ:* https://whatsapp.com/channel/0029VaWWZa1G3R3c4TPADo0M\n\n ${Config.botname} *ᴡᴏʀᴋꜱ*`;
+
     const contextInfo = {
       forwardingScore: 999,
       isForwarded: true,
     };
+
     await message.send(channelMessage, { contextInfo });
   }
 );
@@ -970,10 +988,12 @@ amd(
   },
   async (message) => {
     const SupportMsg = `ᴍᴀꜱᴛᴇʀ ᴍᴅ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ɢʀᴏᴜᴘ\n\n *ʟɪɴᴋ:* https://chat.whatsapp.com/C9vNmipX64o0FbrVz8QPhX\n\n ${Config.botname} *ᴡᴏʀᴋꜱ*`;
+
     const contextInfo = {
       forwardingScore: 999,
       isForwarded: true,
     };
+
     await message.send(SupportMsg, { contextInfo });
   }
 );
