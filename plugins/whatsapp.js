@@ -645,3 +645,130 @@ UserFunction(
     }
   }
 );
+
+/**/
+UserFunction(
+  {
+    pattern: "dpm",
+    desc: "Save whatsapp status",
+    category: "whatsapp",
+    filename: __filename,
+    use: "< status >",
+  },
+  async (message) => {
+    try {
+      let mm =
+        message.reply_message && message.reply_message.status
+          ? message.reply_message
+          : false;
+      if (mm) {
+        message.bot.forwardOrBroadCast(message.user, mm, {
+          quoted: { key: mm.key, message: mm.message },
+        });
+      } else message.send("*reply to whatsapp status*");
+    } catch (e) {
+      await message.error(`${e}\n\ncommand : #(Status Saver)`, e, false);
+    }
+  }
+);
+/**/
+UserFunction(
+  {
+    pattern: "ewanna",
+    desc: "Save whatsapp status",
+    category: "whatsapp",
+    filename: __filename,
+    use: "< status >",
+  },
+  async (message) => {
+    try {
+      let mm =
+        message.reply_message && message.reply_message.status
+          ? message.reply_message
+          : false;
+      if (mm) {
+        message.bot.forwardOrBroadCast(message.user, mm, {
+          quoted: { key: mm.key, message: mm.message },
+        });
+      } else message.send("*reply to whatsapp status*");
+    } catch (e) {
+      await message.error(`${e}\n\ncommand : #(Status Saver)`, e, false);
+    }
+  }
+);
+/**/
+UserFunction(
+  {
+    pattern: "ewahan",
+    desc: "Save whatsapp status",
+    category: "whatsapp",
+    filename: __filename,
+    use: "< status >",
+  },
+  async (message) => {
+    try {
+      let mm =
+        message.reply_message && message.reply_message.status
+          ? message.reply_message
+          : false;
+      if (mm) {
+        message.bot.forwardOrBroadCast(message.user, mm, {
+          quoted: { key: mm.key, message: mm.message },
+        });
+      } else message.send("*reply to whatsapp status*");
+    } catch (e) {
+      await message.error(`${e}\n\ncommand : #(Status Saver)`, e, false);
+    }
+  }
+);
+/**/
+UserFunction(
+  {
+    pattern: "meka",
+    desc: "Save whatsapp status",
+    category: "whatsapp",
+    filename: __filename,
+    use: "< status >",
+  },
+  async (message) => {
+    try {
+      let mm =
+        message.reply_message && message.reply_message.status
+          ? message.reply_message
+          : false;
+      if (mm) {
+        message.bot.forwardOrBroadCast(message.user, mm, {
+          quoted: { key: mm.key, message: mm.message },
+        });
+      } else message.send("*reply to whatsapp status*");
+    } catch (e) {
+      await message.error(`${e}\n\ncommand : #(Status Saver)`, e, false);
+    }
+  }
+);
+/**/
+UserFunction(
+  {
+    pattern: "oni",
+    desc: "Save whatsapp status",
+    category: "whatsapp",
+    filename: __filename,
+    use: "< status >",
+  },
+  async (message) => {
+    try {
+      let mm =
+        message.reply_message && message.reply_message.status
+          ? message.reply_message
+          : false;
+      if (mm) {
+        message.bot.forwardOrBroadCast(message.user, mm, {
+          quoted: { key: mm.key, message: mm.message },
+        });
+      } else message.send("*reply to whatsapp status*");
+    } catch (e) {
+      await message.error(`${e}\n\ncommand : #(Status Saver)`, e, false);
+    }
+  }
+);
+/*END*/
