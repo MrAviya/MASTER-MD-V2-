@@ -13,16 +13,17 @@ smd({ cmdname: "hack", type: "fun", info: "hacking prank", filename: __filename 
     " █ █ █ █ █ █ █ █ 80%",
     " █ █ █ █ █ █ █ █ █ 90%",
     " █ █ █ █ █ █ █ █ █ █ 100%",
-    "System hyjacking on process.. ",
-    "n Conecting to Server error to find 404 ",
+    "> System hyjacking on process.. ",
+    "Conecting to Server error to find 404 ",
     "Device successfully connected...",
     "Receving data...",
-    "Data hyjacked from divice 100% completed ",
+    "Data hyjacked from divice 100% completed",
     "killing all evidence killing all malwares...",
-    " HACKING COMPLETED ",
-    " SENDING LOG DOCUMENTS...",
-    " SUCCESSFULLY SENT DATA AND Connection disconnected",
-    "BACKLOGS CLEARED"
+    "HACKING COMPLETED",
+    "SENDING LOG DOCUMENTS...",
+    "SUCCESSFULLY SENT DATA AND Connection disconnected",
+    "BACKLOGS CLEARED`",
+    "`MASTER MIND HACKED YOUR WHATSAPP` 🧛‍♂️👨‍💻"
   ];
 
   let editedMessage;
