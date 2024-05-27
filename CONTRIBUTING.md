@@ -8,7 +8,7 @@ The first step to contributing is to create an issue on our GitHub repository. T
 
 To create an issue, follow these steps:
 
-1. Go to our GitHub repository: [AstaMD](https://github.com/Astropeda/Asta-Md)
+1. Go to our GitHub repository: [AstaMD](https://github.com/MrMasterOfc/MASTER-MD-V2)
 2. Click on the "Issues" tab.
 3. Click on the "New Issue" button.
 4. Choose the appropriate issue template or select "Open a blank issue".
@@ -22,8 +22,8 @@ After creating an issue, it's important to provide your contact information so t
 For example:
 
 ```
-Phone Number: +234 902 786 2116
-Email: astromedia0010@outlook.com
+Phone Number: +94720797915
+Email: mastermind2000@outlook.com
 ```
 
 This will help us get in touch with you to discuss your contribution further or collaborate on addressing the issue.
