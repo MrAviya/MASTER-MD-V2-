@@ -1,4 +1,4 @@
-# How To Contribute To Us
+`How To Contribute To Us`
 
 We welcome contributions from the community! Whether you're a developer, designer, writer, or simply passionate about our project, there are many ways you can get involved. Here's how you can contribute:
 
@@ -8,7 +8,7 @@ The first step to contributing is to create an issue on our GitHub repository. T
 
 To create an issue, follow these steps:
 
-1. Go to our GitHub repository: [AstaMD](https://github.com/MrMasterOfc/MASTER-MD-V2)
+1. Go to our GitHub repository: [MASTER MD](https://github.com/MrMasterOfc/MASTER-MD-V2)
 2. Click on the "Issues" tab.
 3. Click on the "New Issue" button.
 4. Choose the appropriate issue template or select "Open a blank issue".
