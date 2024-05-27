@@ -1512,7 +1512,7 @@ UserFunction(
       let match = query ? query : message.reply_text;
       var TYPE = match.toLowerCase().includes("doc") ? "document" : "audio";
       if (!match) {
-        return message.reply("*Example*" + prefix + "play back in black*");
+        return message.reply("*Example*" + prefix + "song back in black*");
       }
       let result = ytIdRegex.exec(match) || [];
       let Rmatch = result[0] || false;
@@ -1535,7 +1535,7 @@ UserFunction(
         quality: "best",
       });
       var MTYPE = {
-        ...(await message.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
+        ...(await message.bot.contextInfo(Config.botname, "ᴍᴀꜱᴛᴇʀ ​🇸​​🇴​​🇳​​🇬​ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ")),
       };
       if (resulted) {
         await message.bot.sendMessage(message.jid, {
@@ -1547,16 +1547,16 @@ UserFunction(
           contextInfo: MTYPE,
         });
       } else {
-        message.send("*_video not Found_*");
+        message.send("*_Song not Found_*");
       }
       try {
         fs.unlinkSync(resulted);
       } catch {}
     } catch (error) {
       return message.error(
-        error + "\n\ncommand: play",
+        error + "\n\ncommand: song",
         error,
-        "*_Video not Found_*"
+        "*_Song not Found_*"
       );
     }
   }
