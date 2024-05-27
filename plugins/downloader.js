@@ -1500,7 +1500,7 @@ UserFunction(
 );
 UserFunction(
   {
-    pattern: "play",
+    pattern: "song",
     alias: ["music"],
     desc: "Sends info about the query(of youtube video/audio).",
     category: "downloader",
@@ -1783,7 +1783,7 @@ UserFunction(
 );
 UserFunction(
   {
-    pattern: "song",
+    pattern: "songinfo",
     alias: ["audio"],
     desc: "Downloads audio from youtube.",
     category: "downloader",
@@ -1810,7 +1810,7 @@ UserFunction(
         resukt.ago +
         "\n*🔰𝐀ᴜᴛʜᴏʀ :* " +
         resukt.author.name +
-        "\n\n\n_Reply 1 To Video_ Or _1 document_\n_Reply 2 To Audio_ Or _2 document_";
+        "\n\n\n`MASTER SONG INFO`";
       let IMGTYPE = await amdBuffer(resukt.thumbnail);
       var CTYPE = {
         ...(await mesage.bot.contextInfo(
