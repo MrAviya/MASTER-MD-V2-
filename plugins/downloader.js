@@ -1500,7 +1500,7 @@ UserFunction(
 );
 UserFunction(
   {
-    pattern: "play",
+    pattern: "song",
     alias: ["music"],
     desc: "Sends info about the query(of youtube video/audio).",
     category: "downloader",
@@ -1512,7 +1512,7 @@ UserFunction(
       let match = query ? query : message.reply_text;
       var TYPE = match.toLowerCase().includes("doc") ? "document" : "audio";
       if (!match) {
-        return message.reply("*Example*" + prefix + "play back in black*");
+        return message.reply("*Example*" + prefix + "song back in black*");
       }
       let result = ytIdRegex.exec(match) || [];
       let Rmatch = result[0] || false;
@@ -1529,7 +1529,20 @@ UserFunction(
           "*_Can't dowanload, file duration too big_*"
         );
       }
-      await message.send("_Dᴏᴡɴʟᴏᴀᴅɪɴɢ " + data.title + "?_");
+      await message.send(
+        "\t *𝐌ᴀꜱᴛᴇʀ-𝐌ᴅ • 𝐒ᴏɴɢ 𝐃ᴏᴡɴʟᴏᴀᴅᴇʀ_🎶👨‍💻*   \n\n*🔰𝐓ɪᴛʟᴇ :* " +
+        resukt.title +
+        "\n🔰𝐔ʀʟ : " +
+        resukt.url +
+        "\n*🔰𝐃ᴇꜱᴄʀɪᴘᴛɪᴏɴ :* " +
+        resukt.timestamp +
+        "\n*🔰𝐕ɪᴇᴡꜱ :* " +
+        resukt.views +
+        "\n*🔰𝐔ᴘʟᴏᴀᴅᴇᴅ :* " +
+        resukt.ago +
+        "\n*🔰𝐀ᴜᴛʜᴏʀ :* " +
+        resukt.author.name +
+ );
       let resulted = await yt.download(result[1], {
         type: "audio",
         quality: "best",
@@ -1783,7 +1796,7 @@ UserFunction(
 );
 UserFunction(
   {
-    pattern: "song",
+    pattern: "play",
     alias: ["audio"],
     desc: "Downloads audio from youtube.",
     category: "downloader",
