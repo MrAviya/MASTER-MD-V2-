@@ -66,12 +66,19 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 `HOW TO DEPLOY 👨‍💻 MASTER-MD-Ｖ2 👨‍💻`
+<br>
 ```First Fork the Repo.```
+<br>
 ```Scan the QR or Pair```
+<br>
 ```Click Deploy button and Fill Form.```
+<br>
 ```Click Manage App.```
+<br>
 ```Put Dyno Type to Professional and put 2x```
+<br>
 ```Enjoy```
+<br>
  
 ***Termux Setup***
 
