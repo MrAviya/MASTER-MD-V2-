@@ -487,8 +487,8 @@ smd({
     try {
         let {
             data: _0x44f98c
-        } = await axios.get("https://api.github.com/repos/Astropeda/Asta-Md");
-        let _0x1c73f9 = ("\nSimple WhatsApp Bot By Astropeda Team.* Used By" + Config.ownername + "*.\n\n  *❲❒❳ Stars:* " + (_0x44f98c?.stargazers_count || "120+") + " stars\n  *❲❒❳ Forks:* " + (_0x44f98c?.forks_count || "500+") + " forks\n  *❲❒❳ Creator:* Astropeda\n  *❲❒❳ Created:* " + (_0x44f98c?.created_at || "Unknown") + "\n  *❲❒❳ Repo:* _https://github.com/Astropeda/Asta-Md_\n" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
+        } = await axios.get("https://api.github.com/repos/MrMasterOfc/MASTER-MD-V2");
+        let _0x1c73f9 = ("\nSimple WhatsApp Bot By Redgang Team.* Used By" + Config.ownername + "*.\n\n  *❲❒❳ Stars:* " + (_0x44f98c?.stargazers_count || "120+") + " stars\n  *❲❒❳ Forks:* " + (_0x44f98c?.forks_count || "500+") + " forks\n  *❲❒❳ Creator:* Sahan Maduwantha\n  *❲❒❳ Created:* " + (_0x44f98c?.created_at || "Unknown") + "\n  *❲❒❳ Repo:* _https://github.com/MrMasterOfc/MASTER-MD-V2_\n" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
         return await _0x45da98.sendUi(_0x45da98.jid, {
             caption: _0x1c73f9
         });
@@ -496,22 +496,7 @@ smd({
         await _0x45da98.error(_0x5816fe + "\n\ncommand: repo", _0x5816fe);
     }
 });
-smd({
-    pattern: "status",
-    desc: "To check bot status",
-    category: "user",
-    filename: __filename
-}, async _0x397531 => {
-    try {
-        const _0x2d09cb = process.uptime();
-        timestampe = speed();
-        latensie = speed() - timestampe;
-        let _0x53eb40 = ("*I am " + Config.botname + "*\n  *❲❒❳ Description:* Simple WhatsApp Bot Owned By *" + Config.ownername + "*.\n\n  *❲❒❳ Speed:* " + latensie.toFixed(4) + " ms\n  *❲❒❳ Uptime:* " + runtime(process.uptime()) + "\n  *❲❒❳ Version:* " + Config.VERSION + "\n  *❲❒❳ Owner:*  " + Config.ownername + "\n\n" + (Config.caption ? "\n\n" + Config.caption : "")).trim();
-        return await _0x397531.bot.sendUi(_0x397531.jid, {
-            caption: _0x53eb40
-        });
-    } catch { }
-});
+
 smd({
     pattern: "cpu",
     desc: "To check bot status",
