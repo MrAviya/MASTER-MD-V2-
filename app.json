@@ -1,7 +1,7 @@
 {
-  "name": "asta-botto",
+  "name": "MASTER-MD-V2",
   "description": "Simple WhatsApp Botto.",
-  "logo": "https://i.imgur.com/JMsAFRD.jpeg",
+  "logo": "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
   "keywords": "Asta",
   "success_url": "/",
   "stack": "container",
@@ -9,7 +9,7 @@
   "env": {
     "OWNER_NAME": {
       "description": "Name for Bot Owner",
-      "value": "Astro",
+      "value": "Sahan",
       "required": true
     },
 
@@ -27,17 +27,17 @@
     "BOT_NAME": {
       "description": " NAME FOR BOT",
       "required": false,
-      "value": "ᴀsᴛᴀ-ᴍᴅ"
+      "value": "𝓜𝓐𝓢𝓣𝓔𝓡 𝓜𝓓"
     },
     "TZ": {
       "description": "Put TIME_ZONE according to your location",
       "required": false,
-      "value": "Africa/Lagos"
+      "value": "Asia/colombo"
     },
     "MENU_BTN": {
       "description": "Show Buttons On Menu",
       "required": false,
-      "value": "0"
+      "value": "1"
     },
     "READ_COMMAND": {
       "description": " Read bot cmds",
@@ -95,7 +95,7 @@
     },
     "OWNER_NUMBER": {
       "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-      "value": "2348039607375"
+      "value": "94720797915"
     },
     "SESSION_ID": {
       "description": "put your SESSION_ID here.",
@@ -103,36 +103,36 @@
     },
     "OPENAI_API_KEY": {
       "description": "put your OPENAI api key here.Get it from beta.openai.com ",
-      "value": "",
+      "value": "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",
       "required": false
     },
     "ELEVENLAB_API_KEY": {
       "description": "Put your ElevenLab api key here for Aitts.",
-      "value": "",
+      "value": "345f70f1c3f2ecef4d718d33c14026f9",
       "required": false
     },
     "REMOVE_BG_KEY": {
       "description": "put your REMOVE BG KEY here.Get it from removeBg.com ",
-      "value": "",
+      "value": "neLbXXrp8bSDcohnp1CW5UEa",
       "required": false
     },
     "MODE": {
       "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
-      "value": "private"
+      "value": "public"
     },
     "PACK_NAME": {
       "description": "Put Sticker Pack_Name.",
-      "value": "Asta Md",
+      "value": "Master Md",
       "required": false
     },
     "PACK_AUTHER": {
       "description": "Put Sticker Author_Name.",
-      "value": "",
+      "value": "Sahan",
       "required": false
     },
     "MONGODB_URI": {
       "description": "MongoDb Key",
-      "value": "",
+      "value": "mongodb+srv://sam:sam@cluster0.u1smxsv.mongodb.net/?retryWrites=true&w=majority",
       "required": false
     },
     "DATABASE_URL": {
@@ -142,12 +142,12 @@
     },
     "SUDO": {
       "description": "Sudo Numbers",
-      "value": "",
+      "value": "94720797915",
       "required": false
     },
     "USER_IMAGES": {
       "description": "Menu Images",
-      "value": "",
+      "value": "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
       "required": false
     },
     "MENU": {
