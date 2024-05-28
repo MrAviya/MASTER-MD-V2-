@@ -51,20 +51,6 @@
 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<h2 align="center"> 
-</h2>
-
-`Thanks To,`
-
-1: `Kanishka Brother`
-
-2: `Hemal Brother`
-
-3: `Kavi Brother`
-
-***`WARNING` : `DON'T MODIFY THIS BOT FIRST INFORM THE OWNER`***
-
 1. Create a new file in the `plugins` directory, for example `master.js`.
 2. Define the command logic using the following template:
     ```javascript
@@ -83,7 +69,7 @@
       }
     );
     ```
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
  ### Termux Setup
 
  ```bash
@@ -103,4 +89,16 @@ cd MASTER-MD-V2
 npm i
 npm start
 ```
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<h2 align="center"> 
+</h2>
+
+`Thanks To,`
+
+1: `Me_😂🧛‍♂️`
+
+
+
+***`WARNING` : `DON'T MODIFY THIS BOT FIRST INFORM THE OWNER`***
 
