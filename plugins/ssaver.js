@@ -115,17 +115,3 @@ smd({ on: "status" }, async (message, text) => {
   }
 });
 
-smd(
-  {
-    cmdname: "repo",
-    desc: "github repo",
-  },
-  async (message, text) => {
-    try {
-      message.send(`Repo Link = https://github.com/MrMasterOfc/MASTER-MD-V2`.trim());
-    } catch (e) {
-      console.error("Error:", e);
-      message.reply(`*ERROR!* `);
-    }
-  }
-);
