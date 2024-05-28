@@ -54,7 +54,7 @@ smd({
   filename: __filename,
 }, async (message, match) => {
   try {
-    if (!match) return message.reply(`*_Example : ${prefix + cmdName} WASI_*`);
+    if (!match) return message.reply(`*_Example : ${prefix + cmdName} MASTER_*`);
     await textToLogoGenerator(
       message,
       'hieu-ung-chu/tao-hieu-ung-chu-mam-anh-sang-74',
@@ -74,7 +74,7 @@ smd({
   filename: __filename,
 }, async (message, match) => {
   try {
-    if (!match) return message.reply(`*_Example : ${prefix + cmdName} WASI_*`);
+    if (!match) return message.reply(`*_Example : ${prefix + cmdName} MASTER_*`);
     return await textToLogoGenerator(
       message,
       'tao-hieu-ung-chu-digital-glitch-truc-tuyen-941',
@@ -93,7 +93,7 @@ smd({
   filename: __filename,
 }, async (message, match) => {
   try {
-    if (!match) return message.reply(`*_Example : ${prefix + cmdName} WASI_*`);
+    if (!match) return message.reply(`*_Example : ${prefix + cmdName} MASTER_*`);
     return await textToLogoGenerator(
       message,
       'tao-hieu-ung-chu-pixel-glitch-truc-tuyen-940',
@@ -113,7 +113,7 @@ smd({
   filename: __filename,
 }, async (message, match) => {
   try {
-    if (!match) return message.reply(`*_Example : ${prefix + cmdName} WASI_*`);
+    if (!match) return message.reply(`*_Example : ${prefix + cmdName} MASTER_*`);
     return await textToLogoGenerator(
       message,
       'tao-hieu-ung-chu-graffiti-duong-pho-an-tuong-online-795',
@@ -133,7 +133,7 @@ smd({
   filename: __filename,
 }, async (message, match) => {
   try {
-    if (!match) return message.reply(`*_Example : ${prefix + cmdName} WASI_*`);
+    if (!match) return message.reply(`*_Example : ${prefix + cmdName} MASTER_*`);
     return await textToLogoGenerator(
       message,
       'hieu-ung-chu/chu-graffiti-online-mau-8-182',
@@ -177,7 +177,7 @@ smd({
   try {
     let text1 = match ? match.split(';')[0] : '';
     let text2 = match ? match.split(';')[1] : '';
-    if (!text1) return await message.reply(`*_Example : ${prefix + cmdName} text1_*`);
+    if (!text1) return await message.reply(`*_Example : ${prefix + cmdName} MASTER_*`);
     return await textToLogoGenerator(
       message,
       'hieu-ung-chu/tao-cover-graffiti-online-181',
