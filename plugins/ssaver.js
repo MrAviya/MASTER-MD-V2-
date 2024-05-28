@@ -24,7 +24,7 @@ smd(
   }
 );
 const regexSend = new RegExp(
-  `\\b(?:${["send", "dpm", "dpn", "oni", "ewanna", "ewahan", "dapan", "meka", "mekath", "ewannako", "forward"].join(
+  `\\b(?:${["send", "dpm", "dpn", "oni", "ewanna", "ewahan", "dapan", "meka", "mekath", "ewannako", "dahan","ewahan"].join(
     "|"
   )})\\b`,
   "i"
