@@ -1,4 +1,4 @@
-const { bot, plugins, Config } = require("../lib");
+const { amd, plugins, Config } = require("../lib");
 amd({
     pattern: "repo",
     alias: ["git", "sc", "script"],
