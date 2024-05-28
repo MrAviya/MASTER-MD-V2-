@@ -11,7 +11,7 @@
   
 `MASTER-MD-V2` whatsapp bot is,
 
-       MASTER-MD බොට් යනු ඔබට පහසුවෙන් භාවිත කල හැකි බොට් වරයෙකි.
+       MASTER-MD-V2 බොට් යනු ඔබට පහසුවෙන් භාවිත කල හැකි බොට් වරයෙකි.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -24,20 +24,14 @@
 <a href="https://github.com/MrMasterOfc/MASTER-MD-V2/fork" target="blank"><img align="center" src="https://i.imgur.com/cxaSEWe.png" alt="Deploy bot" height="112" width="310" /></a>
   <div>
 <br>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-      
-<div align="center">
-   
-<a href="https://master-v1-session-c6a0e3471a79.herokuapp.com/"><img align="center" src="https://i.imgur.com/dzPTA6u.png" alt="Scan QR" height="112" width="300" /></a><br>
-<div>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<a href="https://master-v1-session-c6a0e3471a79.herokuapp.com/"><img src="https://img.shields.io/badge/LOGIN%20WITH-PAIR%20CODE-black" alt="LOGIN WITH PAIR CODE" width="250"></a>
+<a href="https://master-v1-session-c6a0e3471a79.herokuapp.com/"><img src="https://img.shields.io/badge/LOGIN%20WITH-PAIR%20CODE-black" alt="GET SESSION" width="250"></a>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<br>
 
+<a href="https://deploy-master.vercel.app/"><img src="https://img.shields.io/badge/LOGIN%20WITH-PAIR%20CODE-black" alt="DEPLOY BUTTON" width="250"></a>
+<br>
 
- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deploy-master.vercel.app/)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
