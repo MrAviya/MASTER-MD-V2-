@@ -10,7 +10,7 @@
     
     amd(
       {
-        pattern: "hi", // The Command Name
+        pattern: "master", // The Command Name
         alias: "hello" // Command Secondary Trigger
         fromMe: true, // is the message from the owner
         desc: "Send Hi Message", // Command Description
@@ -21,8 +21,6 @@
       }
     );
     ```
-
-
 
  ### Termux Setup
 
