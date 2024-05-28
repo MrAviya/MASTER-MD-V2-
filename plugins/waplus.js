@@ -94,7 +94,7 @@ amd(
         return await _0xd700b1.send(
           "*_provide text to update profile status!_*\n*_Example: " +
           prefix +
-          "bio asta md_*"
+          "bio Master_*"
         );
       }
       await _0xd700b1.bot.updateProfileStatus(_0xb45f41);
