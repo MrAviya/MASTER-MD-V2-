@@ -1,7 +1,7 @@
 # Exported from Render on 2024-05-25T09:19:26Z
 services:
 - type: web
-  name: Asta-Md-1
+  name: Master-Md-2
   runtime: node
   repo: https://github.com/MrMasterOfc/MASTER-MD-V2
   plan: free
