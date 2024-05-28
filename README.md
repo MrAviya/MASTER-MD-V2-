@@ -3,7 +3,7 @@
 
 <a href="https://github.com/Astropeda/Asta-Md/fork"><img title="Fork Repo" src="https://img.shields.io/badge/Fork Repo-h?color=black&style=for-the-badge&logo=stackshare">
 
-1. Create a new file in the `plugins` directory, for example `hi.js`.
+1. Create a new file in the `plugins` directory, for example `master.js`.
 2. Define the command logic using the following template:
     ```javascript
     import amd from './lib';
