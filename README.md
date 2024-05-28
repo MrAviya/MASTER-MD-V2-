@@ -37,7 +37,7 @@ pkg install ffmpeg -y
 pkg install wget
 pkg install imagemagick -y
 git clone Your Forked Github Url
-cd Asta-Md
+cd MASTER-MD-V2
 npm i
 npm start
 ```
