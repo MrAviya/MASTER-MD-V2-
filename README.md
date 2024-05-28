@@ -64,7 +64,16 @@
     );
     ```
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
- ### Termux Setup
+
+`HOW TO DEPLOY 👨‍💻 MASTER-MD-Ｖ2 👨‍💻`
+```First Fork the Repo.```
+```Scan the QR or Pair```
+```Click Deploy button and Fill Form.```
+```Click Manage App.```
+```Put Dyno Type to Professional and put 2x```
+```Enjoy```
+ 
+***Termux Setup***
 
  ```bash
 termux-setup-storage
