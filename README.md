@@ -25,11 +25,11 @@
   <div>
 <br>
 
-<a href="https://master-v1-session-c6a0e3471a79.herokuapp.com/"><img src="https://img.shields.io/badge/LOGIN%20WITH-PAIR%20CODE-black" alt="GET SESSION" width="250"></a>
+<a href="https://master-v1-session-c6a0e3471a79.herokuapp.com/"><img src="https://img.shields.io/badge/GET-SESSION-black" alt="GET SESSION" width="250"></a>
 
 <br>
 
-<a href="https://deploy-master.vercel.app/"><img src="https://img.shields.io/badge/LOGIN%20WITH-PAIR%20CODE-black" alt="DEPLOY BUTTON" width="250"></a>
+<a href="https://deploy-master.vercel.app/"><img src="https://img.shields.io/badge/DEPLOY-BUTTON-black" alt="DEPLOY BUTTON" width="250"></a>
 <br>
 
 
