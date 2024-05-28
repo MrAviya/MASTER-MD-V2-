@@ -50,6 +50,7 @@
 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 1. Create a new file in the `plugins` directory, for example `master.js`.
 2. Define the command logic using the following template:
     ```javascript
