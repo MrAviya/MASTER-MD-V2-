@@ -32,17 +32,6 @@
 <a href="https://deploy-master.vercel.app/"><img src="https://img.shields.io/badge/DEPLOY-BUTTON-black" alt="DEPLOY BUTTON" width="250"></a>
 <br>
 
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-### Contact My Main Owner
- <p align="center">
-
-  <a aria-label="Owner WhatsApp Channel" href="https://wa.me/+94720797915?text=Hey_Sahan_🔥" target="_blank">
-    <img alt="whatsapp" src="https://img.shields.io/badge/WhatsApp Owner-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  </a>
-
-
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 1. Create a new file in the `plugins` directory, for example `master.js`.
