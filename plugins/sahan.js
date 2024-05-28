@@ -1,6 +1,6 @@
 const { smd, sleep } = require('../lib');
 
-smd({ cmdname: "sahan", type: "developer", info: "info", filename: __filename }, async (citel) => {
+smd({ cmdname: "sahan", react: "🧛‍♂️", type: "developer", info: "info", filename: __filename }, async (citel) => {
   const messages = [
  "> `My Name is Sahan Maduwantha🎉✨`" ,
     "> `I am 18 Years Old😎✌`",
