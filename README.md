@@ -69,11 +69,11 @@
 <summary>HOW TO DEPLOY 👨‍💻 MASTER-MD-Ｖ2 👨‍💻</summary>
    
     1: First Fork the Repo.
-    2:Scan the QR or Pair
-    3:Click Deploy button and Fill Form.
-    4:Click Manage App.
-    5:Put Dyno Type to Professional and put 2x
-    6:Enjoy
+    2: Scan the QR or Pair
+    3: Click Deploy button and Fill Form.
+    4: Click Manage App.
+    5: Put Dyno Type to Professional and put 2x
+    6: Enjoy
    </details>
 
 <br>
