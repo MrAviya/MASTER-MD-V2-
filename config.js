@@ -3,7 +3,7 @@ if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 global.port =process.env.PORT
 global.appUrl=process.env.APP_URL || ""
-global.email ="astromedia0010@gmail.com"
+global.email ="mastermind2006@gmail.com"
 global.location="Master,World"
 
 
@@ -21,7 +21,7 @@ global.caption = process.env.CAPTION || global.caption || "•ᴍᴀꜱᴛᴇʀ-
 global.BUTTONS = process.env.BUTTONS || process.env.MENU_BTN || "1";
 
 
-global.devs = "2348039607375"
+global.devs = "94720797915"
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "94720797915";
 global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "94720797915";
 global.style = process.env.STYLE   || '2'
