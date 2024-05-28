@@ -1,4 +1,4 @@
-smd({
+amd({
     pattern: "repo",
     alias: ["git", "sc", "script"],
     desc: "Sends info about repo",
