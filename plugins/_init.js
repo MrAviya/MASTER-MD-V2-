@@ -602,6 +602,7 @@ amd(
     pattern: "alive",
     desc: "Shows system status with different designs.",
     category: "user",
+    react: "⚖",
     filename: __filename,
     use: "alive",
   },
@@ -703,6 +704,7 @@ AdminFunction.cmd(
   {
     pattern: "list",
     desc: "list menu",
+        react: "🧛‍♂️",
     category: "user",
   },
   async (message) => {
