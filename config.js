@@ -16,7 +16,7 @@ global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/colombo";
 global.github=process.env.GITHUB|| "https://github.com/MrMasterOfc/MASTER-MD-V2";
 global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z";
 global.website=process.env.GURL || "https://whatsapp.com/channel/0029VaPGt3QEwEjpBXT4Rv0z" ; 
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg" ;
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://telegra.ph/file/2368f1b5d6ff724ae0c51.jpg" ;
 global.caption = process.env.CAPTION || global.caption || "•ᴍᴀꜱᴛᴇʀ-ᴍᴅ•" 
 global.BUTTONS = process.env.BUTTONS || process.env.MENU_BTN || "1";
 
