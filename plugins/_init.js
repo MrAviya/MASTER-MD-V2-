@@ -612,7 +612,7 @@ amd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
+            "https://telegra.ph/file/2368f1b5d6ff724ae0c51.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -635,7 +635,7 @@ amd(
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
+            "https://telegra.ph/file/2368f1b5d6ff724ae0c51.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -657,7 +657,7 @@ amd(
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/5252c041f5cdc8b68b78b.jpg",
+            "https://telegra.ph/file/2368f1b5d6ff724ae0c51.jpg",
             {
               responseType: "arraybuffer",
             }
