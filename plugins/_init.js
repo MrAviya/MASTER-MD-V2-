@@ -374,10 +374,10 @@ global.sendButtons = async (
         message: {
           interactiveMessage: ProtCol.Message.InteractiveMessage.create({
             body: {
-              text: context.text || context.body || context.caption || "Astro",
+              text: context.text || context.body || context.caption || "•ᴍᴀꜱᴛᴇʀ-ᴍᴅ•",
             },
             footer: {
-              text: context.footer || "αѕтα тє¢н тєαм",
+              text: context.footer || "•ᴍᴀꜱᴛᴇʀ-ᴍᴅ•",
             },
             header: {
               ...(OfDataMsg || {}),
