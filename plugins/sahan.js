@@ -16,3 +16,28 @@ smd({ cmdname: "sahan", react: "🧛‍♂️", type: "developer", info: "info",
     editedMessage = await citel.edit(editedMessage, message);
   }
 });
+  if (/1|buttons|btn/gi.test(BUTTONS) && message.device !== "web") {
+        await sendButtons(message, {
+          caption: BotInfoOnMenu,
+          buttons:
+            "\n            #button:cta_url | display_text : Get Your Own| id:" +
+            github +
+            " /# \n            #button:cta_url | display_text : Founder| id:" +
+            SupportGc +
+            " /# \n            #button:cta_url | display_text : Channel | id:" +
+            ChannelLink +
+            " /#            \n            #button:cta_url | display_text : Full Support | id:" +
+            tglink +
+            " /#            \n            ",
+        });
+      } else {
+        await message.sendUi(message.chat, Important, message);
+      }
+    } catch (error) {
+      await message.error(error + "\nCommand:menu", error);
+    }
+  }
+);
+let tglink = "https://t.me/mrsahanofc";
+let ChannelLink = "https://whatsapp.com/channel/0029VaWWZa1G3R3c4TPADo0M";
+let SupportGc = "https://wa.me/+94720797915";
